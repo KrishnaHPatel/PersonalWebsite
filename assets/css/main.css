@@ -2205,7 +2205,7 @@ footer.major {
 	}
 
 	header.major p br {
-		display: block;
+		display: block !important;
 	}
 
 	footer.major {
@@ -2315,7 +2315,7 @@ header.major h2:after {
 	}
 
 	#header p br {
-		display: block;
+		display: block !important;
 	}
 
 	#header.alt {
