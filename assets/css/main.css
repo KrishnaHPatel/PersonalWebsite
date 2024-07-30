@@ -2827,8 +2827,6 @@ body.is-preload #header.alt .logo {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/*Experiences Section*/
-
 .experience-grid {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -2862,6 +2860,20 @@ body.is-preload #header.alt .logo {
 
 .experience-item p {
 	margin-bottom: 10px;
+}
+
+/* Adjust layout for smaller screens */
+@media screen and (max-width: 768px) {
+	.experience-grid {
+		grid-template-columns: 1fr;
+		/* Change to single column layout */
+	}
+
+	.experience-item {
+		width: 100%;
+		/* Ensure full width for each item */
+		margin: 1% 0;
+	}
 }
 
 /* Hobbies Section */
