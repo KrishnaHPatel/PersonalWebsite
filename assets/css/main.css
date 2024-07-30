@@ -2819,13 +2819,46 @@ body.is-preload #header.alt .logo {
 }
 
 /*Intro Headshot*/
+
 #header .logo img {
-	width: 200px;
+	width: 250px;
 	height: 200px;
 	border-radius: 50%;
 	object-fit: cover;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+#header p {
+	line-height: 1.6;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	#header .logo img {
+		width: 200px;
+		height: 150px;
+	}
+
+	#header p {
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#header .logo img {
+		width: 170px;
+		height: 120px;
+	}
+
+	#header p {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+}
+
+/*Experiences*/
 
 .experience-grid {
 	display: grid;
