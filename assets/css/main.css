@@ -2821,7 +2821,7 @@ body.is-preload #header.alt .logo {
 /*Intro Headshot*/
 
 #header .logo img {
-	width: 250px;
+	width: 300px;
 	height: 200px;
 	border-radius: 50%;
 	object-fit: cover;
@@ -2836,7 +2836,7 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 768px) {
 	#header .logo img {
-		width: 200px;
+		width: 250px;
 		height: 150px;
 	}
 
@@ -2848,7 +2848,7 @@ body.is-preload #header.alt .logo {
 
 @media screen and (max-width: 480px) {
 	#header .logo img {
-		width: 170px;
+		width: 220px;
 		height: 120px;
 	}
 
