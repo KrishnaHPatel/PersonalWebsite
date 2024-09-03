@@ -3003,6 +3003,49 @@ body.is-preload #header.alt .logo {
 	color: #555;
 }
 
+/* Projects */
+
+.projects-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 20px;
+	padding: 20px;
+}
+
+.project-item {
+	background: #f8f8f8;
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	width: 100%;
+	text-align: center;
+	transition: transform 0.3s ease;
+	box-sizing: border-box;
+}
+
+.project-item:hover {
+	transform: translateY(-10px);
+}
+
+.project-item .button {
+	background-color: #dcdcdc;
+	color: #333;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 5px;
+	text-decoration: none;
+	font-weight: bold;
+	transition: background-color 0.3s;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	font-size: 16px;
+}
+
 /* Footer */
 
 #footer {
