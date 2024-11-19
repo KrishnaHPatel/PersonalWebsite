@@ -355,15 +355,30 @@
 			<!-- Contact Information -->
 			<section id="contact" class="main special">
 				<header class="major">
-					<section id="contact" class="main special">
-						<header class="major">
-							<h2>Contact Information</h2>
-							<p>Thank you for visiting my website. I'm always open to conversations and would love to hear from you.
-								Whether
-								you have questions, ideas, or just want to chat, please feel free to reach out to me at <a
-									href="mailto:khp42@cornell.edu">khp42@cornell.edu</a>. I look forward to connecting with you!</p>
-						</header>
-					</section>
+					<h2>Contact Information</h2>
+					<p>Thank you for visiting my website. I'm always open to conversations and would love to hear from you.
+						Whether
+						you have questions, ideas, or just want to chat, please feel free to reach out using the form below. I look
+						forward to connecting with you!</p>
+				</header>
+				<form action="https://formsubmit.co/el/yohawe" method="POST">
+					<!-- Email field -->
+					<label for="email">Your Email:</label>
+					<input type="email" name="email" id="email" placeholder="Your email address" required>
+
+					<!-- Message field -->
+					<label for="message">Your Message:</label>
+					<textarea name="message" id="message" placeholder="Type your message here" required></textarea>
+
+					<!-- Hidden fields for customization -->
+					<input type="hidden" name="_subject" value="New Message from Your Website">
+					<input type="hidden" name="_next" value="https://yourdomain.co/thank-you.html">
+					<input type="hidden" name="_captcha" value="true">
+
+					<!-- Submit button -->
+					<button type="submit">Send Message</button>
+				</form>
+			</section>
 
 		</div>
 
