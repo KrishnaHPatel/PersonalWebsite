@@ -19,15 +19,16 @@
 		<!-- Header -->
 		<header id="header" class="alt">
 			<span class="logo"><img src="images/Headshot.jpg" alt="" /></span>
-			<h1>Krishna Patel</h1>
-			<p>Hi!
+			<h1 id="dynamic-text"><br />
+				<br />
+			</h1>
 
-				Welcome to my personal website. I'm excited to share a bit about myself with you. <br /> <br />
+			<p>Welcome to my personal website. I'm excited to share a bit about myself with you. <br /> <br />
 
 				I am currently pursuing a B.S. in Computer Science at Cornell University, where I have developed a
 				strong passion for full-stack development, AI/ML, and leveraging technology for social good. My interests also
-				span across developing software for environmental sustainability, space exploration, and data privacy/security,
-				all of which drive my commitment to creating innovative and impactful solutions. <br /> <br />
+				specifically span across developing software for environmental sustainability, space exploration, and data
+				privacy/security, all of which drive my commitment to creating innovative and impactful solutions. <br /> <br />
 
 				Here, you can learn about my education, skills, experience, and projects. Feel free to explore and get to know
 				more about my journey and interests. Thank you for visiting!<br /> </p>
@@ -72,23 +73,103 @@
 				<header class="major">
 					<h2>Education</h2>
 				</header>
-				<span class="CUlogo"><img src="images/CU_Logo.jpg" alt="" /></span> <br />
-				<h3>I will graduate in May 2026 from Cornell University with a B.S. in Computer Science, along with
-					minors in Electrical &
-					Computer Engineering and Environment & Sustainability.
+				<span class="CUlogo"><img src="images/CU_Logo.jpg" alt="Cornell University Logo"
+						style="width: 150px; height: auto;" /></span> <br />
+				<h3>
+					I will graduate in May 2026 from Cornell University with a B.S. in Computer Science, along with
+					minors in Electrical & Computer Engineering and Environment & Sustainability.
 					<br /> <br />
 					My time at Cornell has been instrumental in my personal and professional growth, allowing me to take on
 					challenging courses, engage in enriching clubs and organizations, and build a supportive community.
 					<br /> <br />
 					Explore more about my academic journey by clicking on the buttons below to learn about the courses I have
-					taken and the clubs I am part of at Cornell! <br />
+					taken and the clubs I am part of at Cornell!
+					<br />
 				</h3>
 				<footer id="edu" class="major">
 					<a href="courses.html" class="button">Courses</a>
-					<br></br>
 					<a href="clubs.html" class="button">Clubs</a>
 				</footer>
+				<br /> <br />
+				<!-- Clubs Images Section -->
+				<div class="club-images"
+					style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
+					<!-- Club Image 1 (Slanted Left) -->
+					<div class="club-image-item"
+						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(-10deg); transition: transform 0.3s ease;">
+						<img src="images/FULLGROUP.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<!-- Club Image 2 (Slanted Right) -->
+					<div class="club-image-item"
+						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(10deg); transition: transform 0.3s ease;">
+						<img src="images/WICCGBody.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<!-- Club Image 3 (Slanted Left) -->
+					<div class="club-image-item"
+						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(-10deg); transition: transform 0.3s ease;">
+						<img src="images/WICCSkating.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<!-- Club Image 4 (Slanted Right) -->
+					<div class="club-image-item"
+						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(10deg); transition: transform 0.3s ease;">
+						<img src="images/ESWGroupPic.jpg" alt="ESW" style="width: 100%; height: 100%; object-fit: cover;">
+					</div>
+					<br /> <br />
+				</div>
 			</section>
+
+			<!-- Add Inline CSS for the Buttons -->
+			<style>
+				/* Button Styling */
+				.button {
+					background-color: #f29d35;
+					/* Exciting orange color */
+					color: white;
+					padding: 10px 20px;
+					border-radius: 25px;
+					text-align: center;
+					text-decoration: none;
+					font-size: 1.1em;
+					margin: 10px;
+					transition: background-color 0.3s, transform 0.2s;
+				}
+
+				/* Button Hover Effects */
+				.button:hover {
+					background-color: #d87f19;
+					/* Darker shade of orange */
+					transform: scale(1.1);
+					/* Slightly enlarge the button */
+				}
+
+				/* Clubs Images Styling */
+				.club-images {
+					display: flex;
+					gap: 20px;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					margin-top: 20px;
+				}
+
+				.club-image-item {
+					position: relative;
+					width: 23%;
+					height: 200px;
+					overflow: hidden;
+					transition: transform 0.3s ease;
+				}
+
+				.club-image-item:hover {
+					transform: rotate(0deg);
+				}
+
+				.club-image-item img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					transition: transform 0.3s ease;
+				}
+			</style>
 
 			<!-- Experiences -->
 			<section id="experience" class="main special">
@@ -139,7 +220,8 @@
 						<img src="images/NASALogo.jpg" alt="NASA Logo" id="NASAMCA">
 						<h3>NASA L’SPACE Mission Concept Academy – Lead Systems Engineer</h3>
 						<p><strong>May 2024 - August 2024</strong></p>
-						<p>Led a sub-team to design a lunar rover, authored mission proposals, and researched subsystems for system
+						<p>Led a sub-team to design a lunar rover, authored mission proposals, and researched subsystems for
+							system
 							integration.</p>
 						<a href="NASAMCA.html" class="button">Learn More</a>
 					</div>
@@ -168,7 +250,8 @@
 						<img src="images/RTC.jpeg" alt="Rewriting The Code Logo" id="rtc">
 						<h3>Rewriting The Code – Active Member</h3>
 						<p><strong>January 2023 - Present</strong></p>
-						<p>Participating in a community of over 25,000+ women in tech through various initiatives and workshops.</p>
+						<p>Participating in a community of over 25,000+ women in tech through various initiatives and workshops.
+						</p>
 						<a href="rtc.html" class="button">Learn More</a>
 					</div>
 
@@ -250,6 +333,36 @@
 						<h3>Personal Website</h3>
 						<p><strong>Source:</strong> GitHub</p>
 						<a href="website.html" class="button">Project Details</a>
+					</div>
+				</div>
+			</section>
+
+			<!-- Demos -->
+			<section id="demos" class="main special">
+				<header class="major">
+					<h2>Demos</h2>
+					<p>Here are video demos showcasing some of my projects in action.</p>
+				</header>
+
+				<div class="demos-grid">
+					<!-- Demo 1 -->
+					<div class="demo-item">
+						<h3>Personal Journal Application</h3>
+						<p>Watch how the Personal Journal Application works in action.</p>
+						<video controls width="100%" poster="images/PersonalAppImage.png">
+							<source src="videos/personaljournaldemo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
+					</div>
+
+					<!-- Demo 2 -->
+					<div class="demo-item">
+						<h3>Leftover Food Solutions -- ESW</h3>
+						<p>Watch how our Sustainability app for Cornell's campus helps reduce food waste.</p>
+						<video controls width="100%" poster="images/ESWWebsiteImage.png">
+							<source src="videos/leftoverfooddemo.mp4" type="video/mp4">
+							Your browser does not support the video tag.
+						</video>
 					</div>
 				</div>
 			</section>
@@ -357,29 +470,30 @@
 				<header class="major">
 					<h2>Contact Information</h2>
 					<p>Thank you for visiting my website. I'm always open to conversations and would love to hear from you.
-						Whether
-						you have questions, ideas, or just want to chat, please feel free to reach out using the form below. I look
-						forward to connecting with you!</p>
+						Whether you have questions, ideas, or just want to chat, please feel free to reach out using the form below.
+						I look forward to connecting with you!</p>
 				</header>
-				<form action="https://formsubmit.co/el/yohawe" method="POST">
+				<form id="contact-form">
+					<!-- Name field (For sender's name) -->
+					<label for="from_name">Your Name: </label>
+					<input type="text" name="from_name" id="from_name" placeholder="Your name" required>
+					<br><br />
+
 					<!-- Email field -->
-					<label for="email">Your Email:</label>
+					<label for="email">Your Email: </label>
 					<input type="email" name="email" id="email" placeholder="Your email address" required>
+					<br><br />
 
 					<!-- Message field -->
-					<label for="message">Your Message:</label>
-					<textarea name="message" id="message" placeholder="Type your message here" required></textarea>
-
-					<!-- Hidden fields for customization -->
-					<input type="hidden" name="_subject" value="New Message from Your Website">
-					<input type="hidden" name="_next" value="https://yourdomain.co/thank-you.html">
-					<input type="hidden" name="_captcha" value="true">
+					<label for="message">Your Message: </label>
+					<textarea name="message" id="message" placeholder="Type your message here" required
+						style="width: 100%; height: 200px; font-size: 16px; padding: 10px;"></textarea>
+					<br><br />
 
 					<!-- Submit button -->
 					<button type="submit">Send Message</button>
 				</form>
 			</section>
-
 		</div>
 
 		<!-- Footer -->
@@ -398,6 +512,52 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script>
+		document.addEventListener("DOMContentLoaded", function () {
+			const text = "Hi, I'm Krishna Patel.";
+			const target = document.getElementById("dynamic-text");
+			let index = 0;
+
+			function typeText() {
+				if (index < text.length) {
+					target.textContent += text[index];
+					index++;
+					setTimeout(typeText, 100);
+				}
+			}
+
+			typeText();
+		});
+	</script>
+	<!-- Include EmailJS SDK -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		// Initialize EmailJS with your public key
+		(function () {
+			emailjs.init("xie5eIO9z2nGJygm7"); // Replace with your actual public key
+		})();
+
+		// Handle form submission
+		document.getElementById("contact-form").addEventListener("submit", function (event) {
+			event.preventDefault();
+
+			// Get form data
+			const formData = {
+				from_name: document.getElementById("from_name").value,
+				to_name: "Krishna Patel",  // Replace this with the actual recipient's name if needed
+				email: document.getElementById("email").value,
+				message: document.getElementById("message").value
+			};
+
+			// Send the email using EmailJS
+			emailjs.send("service_f8tgzfa", "template_kzwjqgg", formData)
+				.then(function (response) {
+					alert("Message sent successfully!");
+				}, function (error) {
+					alert("Error sending message: " + error.text);
+				});
+		});
+	</script>
 
 </body>
 
