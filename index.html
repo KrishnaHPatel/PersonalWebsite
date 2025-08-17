@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
@@ -23,90 +24,190 @@
 				<br />
 			</h1>
 
-			<p>Welcome to my personal website. I'm excited to share a bit about myself with you. <br /> <br />
+			<div class="intro-box" id="introBox">
 
-				I am currently pursuing a B.S. in Computer Science at Cornell University, where I have developed a
-				strong passion for full-stack development, AI/ML, and leveraging technology for social good. My interests also
-				specifically span across developing software for environmental sustainability, space exploration, and data
-				privacy/security, all of which drive my commitment to creating innovative and impactful solutions. <br /> <br />
 
-				Here, you can learn about my education, skills, experience, and projects. Feel free to explore and get to know
-				more about my journey and interests. Thank you for visiting!<br /> </p>
+				<p>Welcome! I'm excited to share a bit about myself with you. <br /> <br />
+
+					I am an aspiring software engineer passionate about building <strong>impactful, scalable solutions</strong> at
+					the intersection of <strong>technology, sustainability, and innovation</strong>. <br /> <br />
+
+					I’m pursuing a <strong>B.S. and an M.Eng. in Computer Science at Cornell University</strong>, graduating in
+					<strong>May 2026</strong>, with minors in <strong>Electrical & Computer Engineering and Environment &
+						Sustainability</strong>. My experience spans
+					<strong>full-stack development, backend systems, and AI/ML</strong> through internships at Atlassian,
+					Navigating AWEtism, and Weill Cornell Medicine. <br /> <br />
+
+					Here, you will find details about my projects, experiences, skills, and interests. Thank you for
+					visiting!<br />
+				</p>
+			</div>
 		</header>
 
 		<!-- Nav -->
 		<nav id="nav">
 			<ul>
-				<li><a href="#education">Education</a></li>
-				<li><a href="#experience">Experiences</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#demos">Demos</a></li>
-				<li><a href="#skills">Skills</a></li>
-				<li><a href="#hobbies">Hobbies</a></li>
-				<li><a href="#quicklinks">Quick Links</a></li>
-				<li><a href="#contact">Contact Me</a></li>
+				<li><a href="#quicklinks"><i class="fas fa-link"></i>Quick Links</a></li>
+				<li><a href="#education"><i class="fas fa-graduation-cap"></i>Education & Leadership</a></li>
+				<li><a href="#experience"><i class="fas fa-briefcase"></i>Experiences</a></li>
+				<li><a href="#projects"><i class="fas fa-rocket"></i>Projects</a></li>
+				<li><a href="#demos"><i class="fas fa-play-circle"></i>Demos</a></li>
+				<li><a href="#skills"><i class="fas fa-tools"></i>Skills</a></li>
+				<li><a href="#hobbies"><i class="fas fa-heart"></i>Hobbies</a></li>
+				<li><a href="#contact"><i class="fas fa-envelope"></i>Contact Me</a></li>
 			</ul>
 		</nav>
 
 		<!-- Main -->
 		<div id="main">
 
-			<!-- Education -->
-			<section id="education" class="main special">
-				<header class="major">
-					<h2>Education</h2>
+			<!-- Quick Links -->
+			<section id="quicklinks" class="main special">
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-link section-icon"></i>
+						<h2>Quick Links</h2>
+					</div>
+					<p>Connect with me across different platforms and explore my professional journey.</p>
 				</header>
-				<span class="CUlogo"><img src="images/CU_Logo.jpg" alt="Cornell University Logo"
-						style="width: 150px; height: auto;" /></span> <br />
-				<h3>
-					I will graduate in May 2026 from Cornell University with a B.S. in Computer Science, along with
-					minors in Electrical & Computer Engineering and Environment & Sustainability.
-					<br /> <br />
-					My time at Cornell has been instrumental in my personal and professional growth, allowing me to take on
-					challenging courses, engage in enriching clubs and organizations, and build a supportive community.
-					<br /> <br />
-					Explore more about my academic journey by clicking on the buttons below to learn about the courses I have
-					taken and the clubs I am part of at Cornell!
-					<br />
-				</h3>
-				<footer id="edu" class="major">
-					<a href="courses.html" class="button">Courses</a>
-					<a href="clubs.html" class="button">Clubs</a>
-				</footer>
-				<br /> <br />
-				<!-- Clubs Images Section -->
-				<div class="club-images"
-					style="display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; margin-top: 20px;">
-					<!-- Club Image 1 (Slanted Left) -->
-					<div class="club-image-item"
-						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(-10deg); transition: transform 0.3s ease;">
-						<img src="images/FULLGROUP.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+
+				<div class="quick-links-grid">
+					<div class="quick-link-card resume-card">
+						<div class="link-icon">
+							<i class="fas fa-file-alt"></i>
+						</div>
+						<div class="link-content">
+							<h3>Resume</h3>
+							<p>View my detailed professional experience and skills</p>
+						</div>
+						<a href="https://docs.google.com/document/d/1Ko0XtrfgblS8QmY0l9OesbanSiAvduhJy0YKC57_lco/edit?usp=sharing"
+							class="link-button" target="_blank">
+							<span>View Resume</span>
+							<i class="fas fa-external-link-alt"></i>
+						</a>
 					</div>
-					<!-- Club Image 2 (Slanted Right) -->
-					<div class="club-image-item"
-						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(10deg); transition: transform 0.3s ease;">
-						<img src="images/WICCGBody.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+
+					<div class="quick-link-card linkedin-card">
+						<div class="link-icon">
+							<i class="fab fa-linkedin"></i>
+						</div>
+						<div class="link-content">
+							<h3>LinkedIn</h3>
+							<p>Connect with me professionally and see my network</p>
+						</div>
+						<a href="https://www.linkedin.com/in/krishnapatel0404/" class="link-button" target="_blank">
+							<span>Connect</span>
+							<i class="fas fa-external-link-alt"></i>
+						</a>
 					</div>
-					<!-- Club Image 3 (Slanted Left) -->
-					<div class="club-image-item"
-						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(-10deg); transition: transform 0.3s ease;">
-						<img src="images/WICCSkating.JPG" alt="WICC" style="width: 100%; height: 100%; object-fit: cover;">
+
+					<div class="quick-link-card github-card">
+						<div class="link-icon">
+							<i class="fab fa-github"></i>
+						</div>
+						<div class="link-content">
+							<h3>GitHub</h3>
+							<p>Explore my code repositories and projects</p>
+						</div>
+						<a href="https://github.com/KrishnaHPatel" class="link-button" target="_blank">
+							<span>View Code</span>
+							<i class="fas fa-external-link-alt"></i>
+						</a>
 					</div>
-					<!-- Club Image 4 (Slanted Right) -->
-					<div class="club-image-item"
-						style="position: relative; width: 23%; height: 200px; overflow: hidden; transform: rotate(10deg); transition: transform 0.3s ease;">
-						<img src="images/ESWGroupPic.jpg" alt="ESW" style="width: 100%; height: 100%; object-fit: cover;">
-					</div>
-					<br /> <br />
 				</div>
 			</section>
 
-			<!-- Add Inline CSS for the Buttons -->
+			<!-- Education & Leadership -->
+			<section id="education" class="main special">
+				<header class="major education-header-main">
+					<div class="education-title-container">
+						<i class="fas fa-graduation-cap education-icon"></i>
+						<h2>Education & Leadership</h2>
+					</div>
+				</header>
+
+				<!-- Cornell Logo and Degree Info -->
+				<div class="education-header">
+					<div class="university-info">
+						<img src="images/CU_Logo.jpg" alt="Cornell University Logo" class="university-logo" />
+						<div class="degree-details">
+							<h3>Cornell University</h3>
+							<div class="degree-item">
+								<p class="degree-text">B.S. in Computer Science</p>
+								<p class="graduation-text">Expected Graduation: December 2025</p>
+							</div>
+							<div class="degree-item">
+								<p class="degree-text">M.Eng. in Computer Science</p>
+								<p class="graduation-text">Expected Graduation: May 2026</p>
+							</div>
+							<p class="minors-text">Minors: Electrical & Computer Engineering, Environment & Sustainability</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Education Content Cards -->
+				<div class="education-content">
+					<div class="content-card courses-card">
+						<div class="card-header">
+							<i class="fas fa-book-open"></i>
+							<h4>Academic Journey</h4>
+						</div>
+						<p>Explore the challenging courses that have shaped my technical foundation and problem-solving skills.</p>
+
+						<a href="courses.html" class="content-button">
+							<span>View Courses</span>
+							<i class="fas fa-arrow-right"></i>
+						</a>
+					</div>
+
+					<div class="content-card leadership-involvement-card">
+						<div class="card-header">
+							<i class="fas fa-users"></i>
+							<h4>Leadership + Campus Involvement</h4>
+						</div>
+						<p>Discover my leadership roles and deep involvement in campus organizations, including my position as Vice
+							President of Women in Computing at Cornell and volunteer work with Food Recovery Network.</p>
+
+						<div class="leadership-buttons">
+							<a href="wicc.html" class="content-button">
+								<span>Vice President of Women in Computing @ Cornell</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+							<a href="frn.html" class="content-button">
+								<span>Volunteer @ Food Recovery Network</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+
+					<div class="content-card employment-card">
+						<div class="card-header">
+							<i class="fas fa-chalkboard-teacher"></i>
+							<h4>School Employment</h4>
+						</div>
+						<p>Explore my roles as a Teaching Assistant and AV Technology Aide, where I support student learning and
+							campus technology infrastructure.</p>
+
+						<div class="employment-buttons">
+							<a href="ta.html" class="content-button">
+								<span>Teaching Assistant</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+							<a href="techaide.html" class="content-button">
+								<span>AV Tech Aide</span>
+								<i class="fas fa-arrow-right"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Add Inline CSS for the Buttons and Navigation -->
 			<style>
 				/* Button Styling */
 				.button {
-					background-color: #f29d35;
-					/* Exciting orange color */
+					background-color: #2e7d32;
+					/* Darker green color */
 					color: white;
 					padding: 10px 20px;
 					border-radius: 25px;
@@ -119,142 +220,1400 @@
 
 				/* Button Hover Effects */
 				.button:hover {
-					background-color: #d87f19;
-					/* Darker shade of orange */
+					background-color: #1b5e20;
+					/* Even darker shade of green */
 					transform: scale(1.1);
 					/* Slightly enlarge the button */
 				}
 
-				/* Clubs Images Styling */
-				.club-images {
-					display: flex;
-					gap: 20px;
-					flex-wrap: wrap;
-					justify-content: space-between;
-					margin-top: 20px;
+				/* Enhanced Navigation Styling */
+				#nav {
+					background: rgba(255, 255, 255, 0.95) !important;
+					backdrop-filter: blur(10px) !important;
+					border-bottom: 2px solid #2e7d32 !important;
+					box-shadow: 0 4px 20px rgba(46, 125, 50, 0.15) !important;
+					transition: all 0.3s ease !important;
 				}
 
-				.club-image-item {
+				#nav ul {
+					display: flex !important;
+					justify-content: center !important;
+					align-items: center !important;
+					flex-wrap: wrap !important;
+					gap: 0 !important;
+					margin: 0 !important;
+					padding: 0 !important;
+				}
+
+				#nav li {
+					position: relative !important;
+					margin: 0 !important;
+					transition: all 0.3s ease !important;
+				}
+
+				#nav a {
+					display: flex !important;
+					align-items: center !important;
+					gap: 8px !important;
+					padding: 1rem 1.5rem !important;
+					color: #2c3e50 !important;
+					text-decoration: none !important;
+					font-weight: 600 !important;
+					position: relative !important;
+					overflow: hidden !important;
+					transition: all 0.3s ease !important;
+					border-radius: 8px !important;
+					margin: 0.5rem !important;
+				}
+
+				#nav a::before {
+					content: '' !important;
+					position: absolute !important;
+					top: 0 !important;
+					left: -100% !important;
+					width: 100% !important;
+					height: 100% !important;
+					background: linear-gradient(90deg, transparent, rgba(46, 125, 50, 0.1), transparent) !important;
+					transition: left 0.5s ease !important;
+				}
+
+				#nav a:hover::before {
+					left: 100% !important;
+				}
+
+				#nav a:hover {
+					color: #2e7d32 !important;
+					background: rgba(46, 125, 50, 0.1) !important;
+					transform: translateY(-2px) !important;
+					box-shadow: 0 4px 15px rgba(46, 125, 50, 0.2) !important;
+				}
+
+				/* Active state indicator */
+				#nav a.active {
+					color: #2e7d32 !important;
+					background: rgba(46, 125, 50, 0.15) !important;
+					border: 2px solid #2e7d32 !important;
+				}
+
+				/* Underline animation on hover */
+				#nav a::after {
+					content: '' !important;
+					position: absolute !important;
+					bottom: 0 !important;
+					left: 50% !important;
+					width: 0 !important;
+					height: 3px !important;
+					background: #2e7d32 !important;
+					transition: all 0.3s ease !important;
+					transform: translateX(-50%) !important;
+					border-radius: 2px !important;
+				}
+
+				#nav a:hover::after {
+					width: 80% !important;
+				}
+
+				/* Icon animations */
+				#nav a i {
+					font-size: 1.1em !important;
+					transition: transform 0.3s ease !important;
+				}
+
+				#nav a:hover i {
+					transform: scale(1.2) rotate(5deg) !important;
+				}
+
+				/* Responsive navigation */
+				@media (max-width: 768px) {
+					#nav ul {
+						flex-direction: column !important;
+						padding: 1rem 0 !important;
+					}
+
+					#nav a {
+						width: 90% !important;
+						justify-content: center !important;
+						margin: 0.25rem 0 !important;
+					}
+				}
+
+				/* Ripple animation */
+				@keyframes ripple {
+					to {
+						transform: scale(4);
+						opacity: 0;
+					}
+				}
+
+				/* Education Section Styling */
+				.education-header-main {
+					margin-bottom: 4rem !important;
+					padding-top: 2rem !important;
+				}
+
+				.education-title-container {
+					text-align: center;
 					position: relative;
-					width: 23%;
-					height: 200px;
+					margin-bottom: 3rem;
+				}
+
+				.education-icon {
+					font-size: 3em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+					display: block;
+					animation: iconFloat 3s ease-in-out infinite;
+				}
+
+				.education-header-main h2 {
+					font-size: 3.5em;
+					color: #2c3e50;
+					margin: 1rem 0;
+					font-weight: 700;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					position: relative;
+				}
+
+
+
+				@keyframes iconFloat {
+
+					0%,
+					100% {
+						transform: translateY(0px);
+					}
+
+					50% {
+						transform: translateY(-8px);
+					}
+				}
+
+				@keyframes shimmer {
+					0% {
+						left: -100%;
+					}
+
+					100% {
+						left: 100%;
+					}
+				}
+
+				.education-header {
+					text-align: center;
+					margin-bottom: 3rem;
+				}
+
+				.university-info {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2rem;
+					margin-bottom: 2rem;
+				}
+
+				.university-logo {
+					width: 187.5px;
+					height: auto;
+					border-radius: 15px;
+					box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+					transition: transform 0.3s ease;
+					margin-top: -10px;
+				}
+
+				.university-logo:hover {
+					transform: scale(1.05);
+				}
+
+				.degree-details h3 {
+					color: #2e7d32;
+					margin: 0 0 0.5rem 0;
+					font-size: 1.8em;
+				}
+
+				.degree-item {
+					margin: 1rem 0;
+					padding: 0.5rem 0;
+				}
+
+				.degree-text {
+					font-size: 1.3em;
+					font-weight: 600;
+					margin: 0 0 0.3rem 0;
+					color: #2c3e50;
+				}
+
+				.minors-text {
+					font-size: 1.1em;
+					margin: 1rem 0 0.5rem 0;
+					color: #5a6c7d;
+				}
+
+				.graduation-text {
+					font-size: 0.95em;
+					margin: 0;
+					color: #7f8c8d;
+					font-style: italic;
+				}
+
+				.education-content {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 2rem;
+					max-width: 1000px;
+					margin: 0 auto;
+				}
+
+				.content-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 20px;
+					padding: 2rem;
+					text-align: center;
+					transition: all 0.3s ease;
+					position: relative;
 					overflow: hidden;
+				}
+
+				.content-card::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 4px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
 					transition: transform 0.3s ease;
 				}
 
-				.club-image-item:hover {
-					transform: rotate(0deg);
+				.content-card:hover::before {
+					transform: scaleX(1);
 				}
 
-				.club-image-item img {
+				.content-card:hover {
+					transform: translateY(-8px);
+					box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.card-header {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 1rem;
+					margin-bottom: 1.5rem;
+				}
+
+				.card-header i {
+					font-size: 2em;
+					color: #2e7d32;
+				}
+
+				.card-header h4 {
+					margin: 0;
+					color: #2c3e50;
+					font-size: 1.4em;
+				}
+
+				.content-card p {
+					color: #5a6c7d;
+					line-height: 1.6;
+					margin-bottom: 1.5rem;
+				}
+
+
+
+				.content-button {
+					display: inline-flex;
+					align-items: center;
+					gap: 0.5rem;
+					background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+					color: white;
+					padding: 0.8rem 1.5rem;
+					border-radius: 25px;
+					text-decoration: none;
+					font-weight: 600;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.content-button::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -100%;
 					width: 100%;
 					height: 100%;
-					object-fit: cover;
+					background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+					transition: left 0.5s ease;
+				}
+
+				.content-button:hover::before {
+					left: 100%;
+				}
+
+				.content-button:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+				}
+
+				.content-button i {
 					transition: transform 0.3s ease;
+				}
+
+				.content-button:hover i {
+					transform: translateX(3px);
+				}
+
+				/* Leadership Buttons Container */
+				.leadership-buttons {
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.leadership-buttons .content-button {
+					margin: 0;
+				}
+
+				/* Employment Buttons Container */
+				.employment-buttons {
+					display: flex;
+					flex-direction: column;
+					gap: 1rem;
+				}
+
+				.employment-buttons .content-button {
+					margin: 0;
+				}
+
+				/* Responsive design for education section */
+				@media (max-width: 768px) {
+					.university-info {
+						flex-direction: column;
+						gap: 1rem;
+					}
+
+					.education-content {
+						grid-template-columns: 1fr;
+						gap: 1.5rem;
+						padding: 0 1rem;
+					}
+
+					.content-card {
+						padding: 1.5rem;
+					}
+				}
+
+				/* Section Title Styling for all sections */
+				.section-header-main {
+					margin-bottom: 4rem !important;
+					padding-top: 2rem !important;
+				}
+
+				.section-title-container {
+					text-align: center;
+					position: relative;
+					margin-bottom: 3rem;
+				}
+
+				.section-icon {
+					font-size: 3em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+					display: block;
+					animation: iconFloat 3s ease-in-out infinite;
+				}
+
+				.section-header-main h2 {
+					font-size: 3.5em;
+					color: #2c3e50;
+					margin: 1rem 0;
+					font-weight: 700;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+					position: relative;
+				}
+
+				/* Responsive design for section titles */
+				@media (max-width: 768px) {
+					.section-header-main h2 {
+						font-size: 2.5em;
+					}
+
+					.section-icon {
+						font-size: 2.5em;
+					}
+				}
+
+				/* Introduction Box Styling */
+				#header .intro-box {
+					background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 240, 0.95) 100%) !important;
+					padding: 2.5rem !important;
+					border-radius: 15px !important;
+					box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+					margin: 2rem auto !important;
+					max-width: 800px !important;
+					text-align: center !important;
+					border: 2px solid #2e7d32 !important;
+					position: relative !important;
+					animation: introBoxFloat 4s ease-in-out infinite !important;
+				}
+
+				/* Introduction Box Paragraph and Text */
+				#header .intro-box p {
+					color: #2c3e50 !important;
+					font-size: 1.1em !important;
+					line-height: 1.8 !important;
+					margin: 0 !important;
+					letter-spacing: normal !important;
+					animation: textReveal 1s ease-out 0.5s both !important;
+				}
+
+				#header .intro-box strong {
+					color: #2e7d32 !important;
+					font-weight: 700 !important;
+				}
+
+				.intro-welcome-icon {
+					font-size: 4em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+					display: block;
+					animation: waveAnimation 2s ease-in-out infinite;
+				}
+
+				.intro-title {
+					font-size: 3.5em;
+					color: #2c3e50;
+					margin: 1rem 0;
+					font-weight: 700;
+					letter-spacing: 2px;
+					text-transform: uppercase;
+				}
+
+				.intro-subtitle {
+					font-size: 1.3em;
+					color: #5a6c7d;
+					margin-top: 1rem;
+					font-style: italic;
+				}
+
+
+
+				/* Animations */
+				@keyframes introBoxFloat {
+
+					0%,
+					100% {
+						transform: translateY(0px);
+					}
+
+					50% {
+						transform: translateY(-5px);
+					}
+				}
+
+				@keyframes textReveal {
+					from {
+						opacity: 0;
+						transform: translateY(20px);
+					}
+
+					to {
+						opacity: 1;
+						transform: translateY(0);
+					}
+				}
+
+				@keyframes waveAnimation {
+
+					0%,
+					100% {
+						transform: rotate(0deg);
+					}
+
+					25% {
+						transform: rotate(20deg);
+					}
+
+					75% {
+						transform: rotate(-10deg);
+					}
+				}
+
+				/* Responsive Design for Intro Box */
+				@media (max-width: 768px) {
+					#header .intro-box {
+						padding: 2rem !important;
+						margin: 1rem !important;
+					}
+				}
+
+				#header .intro-box p {
+					color: #2c3e50 !important;
+					font-size: 1.1em !important;
+					line-height: 1.8 !important;
+					margin: 0 !important;
+					letter-spacing: normal !important;
+					animation: textReveal 1s ease-out 0.5s both !important;
+				}
+
+				#header .intro-box strong {
+					color: #2e7d32 !important;
+					font-weight: 700 !important;
+				}
+
+				/* Skills Section Styling */
+				.skills-grid {
+					display: grid;
+					grid-template-columns: 1fr;
+					gap: 2rem;
+					max-width: 800px;
+					margin: 0 auto;
+				}
+
+				.skill-category {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 20px;
+					padding: 2rem;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.skill-category::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 4px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
+					transition: transform 0.3s ease;
+				}
+
+				.skill-category:hover::before {
+					transform: scaleX(1);
+				}
+
+				.skill-category:hover {
+					transform: translateY(-8px);
+					box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.skill-header {
+					display: flex;
+					align-items: center;
+					gap: 1rem;
+					margin-bottom: 1.5rem;
+					text-align: center;
+					justify-content: center;
+				}
+
+				.skill-header i {
+					font-size: 2.5em;
+					color: #2e7d32;
+					animation: iconFloat 3s ease-in-out infinite;
+				}
+
+				.skill-header h3 {
+					margin: 0;
+					color: #2c3e50;
+					font-size: 1.4em;
+					font-weight: 600;
+				}
+
+				.skill-tags {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.8rem;
+					justify-content: center;
+				}
+
+				.skill-tag {
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+					color: #2e7d32;
+					padding: 0.6rem 1.2rem;
+					border-radius: 25px;
+					font-size: 0.9em;
+					font-weight: 500;
+					border: 1px solid rgba(46, 125, 50, 0.2);
+					transition: all 0.3s ease;
+					cursor: default;
+				}
+
+				.skill-tag:hover {
+					background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+					color: white;
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+					border-color: #2e7d32;
+				}
+
+				/* Responsive design for skills */
+				@media (max-width: 768px) {
+					.skills-grid {
+						grid-template-columns: 1fr;
+						gap: 1.5rem;
+						padding: 0 1rem;
+					}
+
+					.skill-category {
+						padding: 1.5rem;
+					}
+
+					.skill-header h3 {
+						font-size: 1.2em;
+					}
+
+					.skill-tags {
+						gap: 0.6rem;
+					}
+
+					.skill-tag {
+						padding: 0.5rem 1rem;
+						font-size: 0.85em;
+					}
+				}
+
+				/* Experience Section Styling */
+				.experience-grid {
+					max-width: 1000px;
+					margin: 0 auto;
+				}
+
+				.experience-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 25px;
+					padding: 2.5rem;
+					margin-bottom: 3rem;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+
+
+				.experience-card::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 5px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
+					transition: transform 0.3s ease;
+				}
+
+				.experience-card:hover::before {
+					transform: scaleX(1);
+				}
+
+				.experience-card:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 25px 50px rgba(46, 125, 50, 0.2);
+				}
+
+				.experience-header {
+					display: flex;
+					justify-content: space-between;
+					align-items: flex-start;
+					margin-bottom: 2rem;
+					flex-wrap: wrap;
+					gap: 1rem;
+				}
+
+				.company-info {
+					display: flex;
+					align-items: center;
+					gap: 1.5rem;
+					flex: 1;
+				}
+
+				.company-image {
+					width: 80px;
+					height: 80px;
+					border-radius: 15px;
+					object-fit: cover;
+					box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+					transition: transform 0.3s ease;
+				}
+
+				.company-image.rectangular-image {
+					width: 100px;
+					height: 60px;
+					border-radius: 10px;
+					object-fit: cover;
+				}
+
+				/* New Experience Card Layout */
+				.experience-header {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					margin-bottom: 1.5rem;
+				}
+
+				.company-image-container {
+					margin-bottom: 1rem;
+					display: flex;
+					justify-content: center;
+				}
+
+				.company-image-container .company-image {
+					width: 120px;
+					height: 120px;
+					border-radius: 15px;
+					object-fit: contain;
+					box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+					transition: transform 0.3s ease;
+					background: white;
+					padding: 8px;
+				}
+
+				.company-image-container .company-image.rectangular-image {
+					width: 140px;
+					height: 80px;
+					border-radius: 10px;
+					object-fit: contain;
+					background: white;
+					padding: 6px;
+				}
+
+				.company-image-container .company-image:hover {
+					transform: scale(1.05);
+				}
+
+				.company-details {
+					text-align: center;
+				}
+
+				.company-image:hover {
+					transform: scale(1.05);
+				}
+
+				.company-details h3 {
+					margin: 0 0 0.5rem 0;
+					color: #2c3e50;
+					font-size: 1.8em;
+					font-weight: 700;
+				}
+
+				.role {
+					margin: 0 0 0.3rem 0;
+					color: #2e7d32;
+					font-size: 1.2em;
+					font-weight: 600;
+				}
+
+				.duration {
+					margin: 0;
+					color: #7f8c8d;
+					font-size: 1em;
+					font-style: italic;
+				}
+
+
+
+				.experience-content {
+					line-height: 1.7;
+				}
+
+				.experience-description {
+					color: #2c3e50;
+					font-size: 1.1em;
+					margin-bottom: 2rem;
+					text-align: justify;
+				}
+
+				.experience-actions {
+					text-align: center;
+					margin-top: 2rem;
+				}
+
+				.experience-button {
+					display: inline-flex;
+					align-items: center;
+					gap: 0.8rem;
+					background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%);
+					color: white;
+					padding: 1rem 2rem;
+					border-radius: 30px;
+					text-decoration: none;
+					font-weight: 600;
+					font-size: 1.1em;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+					box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+				}
+
+				.experience-button::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: -100%;
+					width: 100%;
+					height: 100%;
+					background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+					transition: left 0.5s ease;
+				}
+
+				.experience-button:hover::before {
+					left: 100%;
+				}
+
+				.experience-button:hover {
+					transform: translateY(-3px);
+					box-shadow: 0 15px 35px rgba(46, 125, 50, 0.4);
+				}
+
+				.experience-button i {
+					transition: transform 0.3s ease;
+				}
+
+				.experience-button:hover i {
+					transform: translateX(5px);
+				}
+
+				.project-section {
+					margin-bottom: 2rem;
+					padding: 1.5rem;
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.05) 0%, rgba(76, 175, 80, 0.05) 100%);
+					border-radius: 15px;
+					border: 1px solid rgba(46, 125, 50, 0.1);
+				}
+
+				.project-section h4 {
+					color: #2e7d32;
+					font-size: 1.3em;
+					margin: 0 0 1rem 0;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+
+				.project-section h4 i {
+					font-size: 1.1em;
+				}
+
+				.project-details p {
+					margin: 0.8rem 0;
+					color: #2c3e50;
+					text-align: justify;
+				}
+
+				.project-details strong {
+					color: #2e7d32;
+					font-weight: 600;
+				}
+
+				.tech-stack {
+					margin: 2rem 0;
+				}
+
+				.tech-stack h4 {
+					color: #2e7d32;
+					font-size: 1.3em;
+					margin: 0 0 1rem 0;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+
+				.tech-tags {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.8rem;
+				}
+
+				.tech-tag {
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+					color: #2e7d32;
+					padding: 0.6rem 1.2rem;
+					border-radius: 25px;
+					font-size: 0.9em;
+					font-weight: 500;
+					border: 1px solid rgba(46, 125, 50, 0.2);
+					transition: all 0.3s ease;
+				}
+
+				.tech-tag:hover {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+				}
+
+				.key-takeaways {
+					margin: 2rem 0;
+				}
+
+				.key-takeaways h4 {
+					color: #2e7d32;
+					font-size: 1.3em;
+					margin: 0 0 1rem 0;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+
+				.key-takeaways ul {
+					margin: 0;
+					padding-left: 1.5rem;
+				}
+
+				.key-takeaways li {
+					color: #2c3e50;
+					margin: 0.5rem 0;
+					line-height: 1.6;
+				}
+
+				.experience-gallery {
+					margin-top: 2rem;
+					text-align: center;
+				}
+
+				.gallery-image {
+					max-width: 100%;
+					height: auto;
+					border-radius: 15px;
+					box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+					transition: transform 0.3s ease;
+				}
+
+				.gallery-image:hover {
+					transform: scale(1.02);
+				}
+
+				/* Responsive design for experience */
+				@media (max-width: 768px) {
+					.experience-card {
+						padding: 1.5rem;
+						margin-bottom: 2rem;
+					}
+
+					.experience-header {
+						flex-direction: column;
+						align-items: center;
+						text-align: center;
+					}
+
+					.company-info {
+						flex-direction: column;
+						text-align: center;
+					}
+
+					.company-details h3 {
+						font-size: 1.5em;
+					}
+
+					.project-section {
+						padding: 1rem;
+					}
+
+					.tech-tags {
+						gap: 0.6rem;
+					}
+
+					.tech-tag {
+						padding: 0.5rem 1rem;
+						font-size: 0.85em;
+					}
+				}
+
+				/* Quick Links Styling */
+				.quick-links-grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+					gap: 2rem;
+					max-width: 1000px;
+					margin: 0 auto;
+				}
+
+				.quick-link-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 20px;
+					padding: 2rem;
+					text-align: center;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.quick-link-card::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 4px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
+					transition: transform 0.3s ease;
+				}
+
+				.quick-link-card:hover::before {
+					transform: scaleX(1);
+				}
+
+				.quick-link-card:hover {
+					transform: translateY(-8px);
+					box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.link-icon {
+					font-size: 3em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+					display: block;
+					animation: iconFloat 3s ease-in-out infinite;
+				}
+
+				.link-content h3 {
+					color: #2c3e50;
+					font-size: 1.4em;
+					margin: 0 0 1rem 0;
+					font-weight: 600;
+				}
+
+				.link-content p {
+					color: #5a6c7d;
+					line-height: 1.6;
+					margin: 0 0 1.5rem 0;
+				}
+
+				.link-button {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					padding: 0.8rem 1.5rem;
+					border-radius: 25px;
+					text-decoration: none;
+					font-weight: 600;
+					display: inline-flex;
+					align-items: center;
+					gap: 0.5rem;
+					transition: all 0.3s ease;
+					box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+				}
+
+				.link-button:hover {
+					transform: translateY(-3px);
+					box-shadow: 0 15px 35px rgba(46, 125, 50, 0.4);
+					color: white;
+				}
+
+				/* Contact Section Styling */
+				.contact-container {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					gap: 3rem;
+					max-width: 1200px;
+					margin: 0 auto;
+				}
+
+				.contact-info {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5rem;
+				}
+
+				.contact-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 20px;
+					padding: 1.5rem;
+					text-align: center;
+					transition: all 0.3s ease;
+				}
+
+				.contact-card:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.contact-icon {
+					font-size: 2.5em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+					display: block;
+					animation: iconFloat 3s ease-in-out infinite;
+				}
+
+				.contact-card h3 {
+					color: #2c3e50;
+					font-size: 1.3em;
+					margin: 0 0 1rem 0;
+					font-weight: 600;
+				}
+
+				.contact-card p {
+					color: #5a6c7d;
+					line-height: 1.6;
+					margin: 0;
+				}
+
+				.contact-form-container {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 20px;
+					padding: 2rem;
+				}
+
+				.contact-form-container h3 {
+					color: #2c3e50;
+					font-size: 1.5em;
+					margin: 0 0 2rem 0;
+					text-align: center;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.5rem;
+				}
+
+				.modern-contact-form {
+					display: flex;
+					flex-direction: column;
+					gap: 1.5rem;
+				}
+
+				.form-group {
+					display: flex;
+					flex-direction: column;
+					gap: 0.5rem;
+				}
+
+				.form-group label {
+					color: #2c3e50;
+					font-weight: 600;
+					display: flex;
+					align-items: center;
+					gap: 0.5rem;
+				}
+
+				.form-group label i {
+					color: #2e7d32;
+					font-size: 1.1em;
+				}
+
+				.form-group input,
+				.form-group textarea {
+					padding: 1rem;
+					border: 2px solid #e9ecef;
+					border-radius: 10px;
+					font-size: 1rem;
+					transition: all 0.3s ease;
+					background: white;
+				}
+
+				.form-group input:focus,
+				.form-group textarea:focus {
+					outline: none;
+					border-color: #2e7d32;
+					box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+				}
+
+				.form-group textarea {
+					min-height: 120px;
+					resize: vertical;
+				}
+
+				.submit-button {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					padding: 1rem 2rem;
+					border: none;
+					border-radius: 25px;
+					font-size: 1.1em;
+					font-weight: 600;
+					cursor: pointer;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.8rem;
+					transition: all 0.3s ease;
+					box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+					margin-top: 1rem;
+				}
+
+				.submit-button:hover {
+					transform: translateY(-3px);
+					box-shadow: 0 15px 35px rgba(46, 125, 50, 0.4);
+				}
+
+				/* Responsive Design for Quick Links and Contact */
+				@media (max-width: 768px) {
+					.quick-links-grid {
+						grid-template-columns: 1fr;
+						gap: 1.5rem;
+						padding: 0 1rem;
+					}
+
+					.contact-container {
+						grid-template-columns: 1fr;
+						gap: 2rem;
+						padding: 0 1rem;
+					}
+
+					.contact-form-container {
+						padding: 1.5rem;
+					}
 				}
 			</style>
 
 			<!-- Experiences -->
 			<section id="experience" class="main special">
-				<header class="major">
-					<h2>Experiences</h2>
-					<p>Here is a brief overview of all my professional experiences in and out of Cornell. Click the button to
-						learn more about each of them!</p>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-briefcase section-icon"></i>
+						<h2>Experiences</h2>
+					</div>
+					<p>Here is a brief overview of my key professional experiences. Click the button to learn more about each of
+						them!</p>
 				</header>
 
-				<!-- <div class="experience-grid">
-					<div class="experience-item">
-						<img src="images/NavigatingAwetism.jpg" alt="Navigating AWEtism Logo" id="aiintern">
-						<h3>Navigating AWEtism – AI and Data Intern</h3>
-						<p><strong>April 2024 - September 2024</strong></p>
-						<p>Developed a Watson Assistant AI chatbot and created comprehensive datasets for training AI models using
-							Python.</p>
-						<a href="aiintern.html" class="button">Learn More</a>
-						<a href="AIResearch.html" class="button">Presentation</a>
+				<div class="experience-grid">
+					<!-- Atlassian Experience -->
+					<div class="experience-card">
+						<div class="experience-header">
+							<div class="company-image-container">
+								<img src="images/AtlassianLogo.jpg" alt="Atlassian Logo" class="company-image" />
+							</div>
+							<div class="company-details">
+								<h3>Atlassian</h3>
+								<p class="role">Software Engineering Intern</p>
+								<p class="duration">Summer 2025</p>
+							</div>
+						</div>
+
+						<div class="experience-content">
+							<p class="experience-description">
+								I joined Atlassian's Flywheel team, working on features that improved user engagement and streamlined
+								internal workflows for Confluence — used by millions worldwide. Over the summer, I delivered two
+								high-impact projects from concept to deployment, collaborating across engineering, product, and design.
+							</p>
+
+							<div class="experience-actions">
+								<a href="atlassian.html" class="experience-button">
+									<span>Learn More</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 
-					<div class="experience-item">
-						<img src="images/CornellCIS.jpg" alt="Cornell University Logo" id="ta">
-						<h3>Cornell University – Teaching Assistant for CS 4320: Introduction to Database Systems</h3>
-						<p><strong>August 2024 - Present</strong></p>
-						<p>Assisting the professor by grading assignments, preparing lectures, and providing one-on-one student
-							support.</p>
-						<a href="ta.html" class="button">Learn More</a>
+					<!-- AI Intern Experience -->
+					<div class="experience-card">
+						<div class="experience-header">
+							<div class="company-image-container">
+								<img src="images/NavigatingAwetism.jpg" alt="Navigating AWEtism"
+									class="company-image rectangular-image" />
+							</div>
+							<div class="company-details">
+								<h3>Navigating AWEtism</h3>
+								<p class="role">AI Intern</p>
+								<p class="duration">Summer 2024</p>
+							</div>
+						</div>
+
+						<div class="experience-content">
+							<p class="experience-description">
+								Developed AI-powered solutions for autism support, including chatbot training datasets and machine
+								learning models to improve accessibility and user experience for individuals with autism.
+							</p>
+
+							<div class="experience-actions">
+								<a href="aiintern.html" class="experience-button">
+									<span>Learn More</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 
-					<div class="experience-item">
-						<img src="images/ESWLogo.jpg" alt="Engineers For A Sustainable World Logo" id="esw">
-						<h3>Engineers For A Sustainable World – Software Developer</h3>
-						<p><strong>August 2023 - Present</strong></p>
-						<p>Developing software solutions focused on sustainability, working on interdisciplinary teams to drive
-							impactful environmental projects.</p>
-						<a href="esw.html" class="button">Learn More</a>
-						<a href="ExpoPoster.html" class="button">Expo Poster</a>
+
+
+					<!-- ESW Experience -->
+					<div class="experience-card">
+						<div class="experience-header">
+							<div class="company-image-container">
+								<img src="images/ESWLogo.jpg" alt="ESW Logo" class="company-image" />
+							</div>
+							<div class="company-details">
+								<h3>Engineers For A Sustainable World</h3>
+								<p class="role">Software Developer</p>
+								<p class="duration">August 2023 - Present</p>
+							</div>
+						</div>
+
+						<div class="experience-content">
+							<p class="experience-description">
+								Developing software solutions focused on sustainability, working on interdisciplinary teams to drive
+								impactful environmental projects and promote sustainable engineering practices.
+							</p>
+
+							<div class="experience-actions">
+								<a href="esw.html" class="experience-button">
+									<span>Learn More</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 
-					<div class="experience-item">
-						<img src="images/Headstarter.jpeg" alt="Headstarter AI Logo" id="swefellow">
-						<h3>Headstarter AI – Software Engineering Fellow</h3>
-						<p><strong>July 2024 - September 2024</strong></p>
-						<p>Developed AI projects and worked in teams of 4 under the guidance of top engineers, utilizing advanced
-							technologies to create impactful solutions.</p>
-						<a href="swefellow.html" class="button">Learn More</a>
+
+
+					<!-- Weill Cornell Medicine Experience -->
+					<div class="experience-card">
+						<div class="experience-header">
+							<div class="company-image-container">
+								<img src="images/WCMLogo.jpg" alt="Weill Cornell Medicine" class="company-image" />
+							</div>
+							<div class="company-details">
+								<h3>Weill Cornell Medicine</h3>
+								<p class="role">Research Intern</p>
+								<p class="duration">Summer 2023</p>
+							</div>
+						</div>
+
+						<div class="experience-content">
+							<p class="experience-description">
+								Conducted research in medical technology, contributing to a publication on innovative healthcare
+								solutions and gaining valuable experience in the intersection of technology and medicine.
+							</p>
+
+							<div class="experience-actions">
+								<a href="weillcornell.html" class="experience-button">
+									<span>Learn More</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
 					</div>
 
-					<div class="experience-item">
-						<img src="images/NASALogo.jpg" alt="NASA Logo" id="NASAMCA">
-						<h3>NASA L’SPACE Mission Concept Academy – Lead Systems Engineer</h3>
-						<p><strong>May 2024 - August 2024</strong></p>
-						<p>Led a sub-team to design a lunar rover, authored mission proposals, and researched subsystems for
-							system
-							integration.</p>
-						<a href="NASAMCA.html" class="button">Learn More</a>
-						<a href="FinalMCA.html" class="button">Presentation</a>
-					</div>
 
-					<div class="experience-item">
-						<img src="images/WCMLogo.jpg" alt="Weill Cornell Medicine Logo" id="research">
-						<h3>Weill Cornell Medicine – Research Intern</h3>
-						<p><strong>June 2023 - August 2023</strong></p>
-						<p>Developed an advanced filtration system for spacesuits and published research in a prominent journal,
-							Frontiers In Space Technologies.</p>
-						<a href="research.html" class="button">Learn More</a>
-						<a href="https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1391200/full"
-							class="button">Publication</a>
-					</div>
-
-					<div class="experience-item">
-						<img src="images/CJGSOM.jpeg" alt="Cornell University Logo" id="techaide">
-						<h3>Cornell Johnson Graduate School of Management – Technology Aide (AV)</h3>
-						<p><strong>August 2023 - Present</strong></p>
-						<p>Provide video conferencing, webinar, and AV support to faculty and students and perform maintenance for
-							all computer equipment.</p>
-						<a href="techaide.html" class="button">Learn More</a>
-					</div>
-
-					<div class="experience-item">
-						<img src="images/RTC.jpeg" alt="Rewriting The Code Logo" id="rtc">
-						<h3>Rewriting The Code – Active Member</h3>
-						<p><strong>January 2023 - Present</strong></p>
-						<p>Participating in a community of over 25,000+ women in tech through various initiatives and workshops.
-						</p>
-						<a href="rtc.html" class="button">Learn More</a>
-					</div>
-
-					<div class="experience-item">
-						<img src="images/STEAM4Girls.jpg" alt="STEAM 4 Girls Logo" id="steam4girls">
-						<h3>Founder of STEAM 4 Girls</h3>
-						<p><strong>June 2020 - August 2020</strong></p>
-						<p>Initiated a program to encourage young girls to explore and excel in STEM.</p>
-						<a href="steam4girls.html" class="button">Learn More</a>
-					</div>
-				</div> -->
+				</div>
 			</section>
 
 			<!-- Projects -->
 			<section id="projects" class="main special">
-				<header class="major">
-					<h2>Projects</h2>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-rocket section-icon"></i>
+						<h2>Projects</h2>
+					</div>
 					<p>Below is a brief overview of some of my key projects.</p>
 				</header>
 
@@ -323,8 +1682,11 @@
 
 			<!-- Demos -->
 			<section id="demos" class="main special">
-				<header class="major">
-					<h2>Demos</h2>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-play-circle section-icon"></i>
+						<h2>Demos</h2>
+					</div>
 					<p>Here are video demos showcasing some of my projects in action.</p>
 				</header>
 
@@ -353,28 +1715,91 @@
 
 			<!-- Skills -->
 			<section id="skills" class="main special">
-				<header class="major">
-					<h2>Skills</h2>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-tools section-icon"></i>
+						<h2>Skills</h2>
+					</div>
 					<p>Through my experiences and extracurricular involvement, I have gained a diverse set of skills. Here is a
 						brief overview of my technical and soft skills.</p>
 				</header>
 
-				<div class="skills-container">
-					<div class="skill-card">
-						<h4><u>Languages & Web Technologies</u></h4>
-						<p>Python, Java, C, JavaScript, HTML/CSS, SQL, Swift, OCaml</p>
+				<div class="skills-grid">
+					<div class="skill-category">
+						<div class="skill-header">
+							<i class="fas fa-code"></i>
+							<h3>Languages & Web Technologies</h3>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Python</span>
+							<span class="skill-tag">Java</span>
+							<span class="skill-tag">C</span>
+							<span class="skill-tag">JavaScript</span>
+							<span class="skill-tag">TypeScript</span>
+							<span class="skill-tag">HTML/CSS</span>
+							<span class="skill-tag">SQL</span>
+							<span class="skill-tag">Swift</span>
+							<span class="skill-tag">OCaml</span>
+						</div>
 					</div>
-					<div class="skill-card">
-						<h4><u>Frameworks & Libraries/APIs</u></h4>
-						<p>Flask, Django, React, Node.js, PyTorch, Pandas, NumPy, OpenAI, Stripe API, OAuth, Firebase</p>
+
+					<div class="skill-category">
+						<div class="skill-header">
+							<i class="fas fa-puzzle-piece"></i>
+							<h3>Frameworks, Libraries & APIs</h3>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Flask</span>
+							<span class="skill-tag">Django</span>
+							<span class="skill-tag">React</span>
+							<span class="skill-tag">Node.js</span>
+							<span class="skill-tag">PyTorch</span>
+							<span class="skill-tag">Pandas</span>
+							<span class="skill-tag">NumPy</span>
+							<span class="skill-tag">OpenAI API</span>
+							<span class="skill-tag">Stripe API</span>
+							<span class="skill-tag">OAuth</span>
+							<span class="skill-tag">Firebase</span>
+							<span class="skill-tag">REST APIs</span>
+							<span class="skill-tag">Prompt Engineering</span>
+						</div>
 					</div>
-					<div class="skill-card">
-						<h4><u>Tools & Platforms</u></h4>
-						<p>AWS, PostgreSQL, Git, AutoCAD, Siemens NX, Arduino, VS Code</p>
+
+					<div class="skill-category">
+						<div class="skill-header">
+							<i class="fas fa-tools"></i>
+							<h3>Tools & Platforms</h3>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">AWS (S3)</span>
+							<span class="skill-tag">PostgreSQL</span>
+							<span class="skill-tag">Databricks</span>
+							<span class="skill-tag">Socrates</span>
+							<span class="skill-tag">Statsig</span>
+							<span class="skill-tag">Switcheroo</span>
+							<span class="skill-tag">StarGate</span>
+							<span class="skill-tag">Bitbucket</span>
+							<span class="skill-tag">Git</span>
+							<span class="skill-tag">VS Code</span>
+							<span class="skill-tag">AutoCAD</span>
+							<span class="skill-tag">Arduino</span>
+						</div>
 					</div>
-					<div class="skill-card">
-						<h4><u>Soft Skills</u></h4>
-						<p>Leadership, Team Management, Problem Solving, Communication, Time Management, Collaboration</p>
+
+					<div class="skill-category">
+						<div class="skill-header">
+							<i class="fas fa-users"></i>
+							<h3>Soft Skills</h3>
+						</div>
+						<div class="skill-tags">
+							<span class="skill-tag">Problem Solving</span>
+							<span class="skill-tag">Communication</span>
+							<span class="skill-tag">Collaboration</span>
+							<span class="skill-tag">Adaptability</span>
+							<span class="skill-tag">Leadership</span>
+							<span class="skill-tag">Team Management</span>
+							<span class="skill-tag">Growth Mindset</span>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -383,8 +1808,11 @@
 
 			<!-- Hobbies -->
 			<section id="hobbies" class="main special">
-				<header class="major">
-					<h2>Hobbies</h2>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-heart section-icon"></i>
+						<h2>Hobbies</h2>
+					</div>
 					<p>Outside of my professional life, I have a range of hobbies that keep me active and inspired. Here are some
 						of the activities I enjoy in my free time.</p>
 				</header>
@@ -449,52 +1877,81 @@
 				</div> -->
 			</section>
 
-			<!-- Quick Links -->
-			<section id="quicklinks" class="main special">
-				<div class="content">
-					<header class="major special">
-						<h2>Quick Links</h2>
-					</header>
-					<p>Here are links to my Resume, LinkedIn, and GitHub. Feel free to explore those as well! <br /> <br />
-					</p>
-					<ul class="actions special">
-						<li><a
-								href="https://docs.google.com/document/d/1Ko0XtrfgblS8QmY0l9OesbanSiAvduhJy0YKC57_lco/edit?usp=sharing"
-								class="button">Resume</a></li>
-						<li><a href="https://www.linkedin.com/in/krishnapatel0404/" class="button">LinkedIn</a></li>
-						<li><a href="https://github.com/KrishnaHPatel" class="button">GitHub</a></li>
-					</ul>
-				</div>
-			</section>
+
 
 			<!-- Contact Information -->
 			<section id="contact" class="main special">
-				<header class="major">
-					<h2>Contact Information</h2>
-					<p>Thank you for visiting my website. I'm always open to conversations and would love to hear from you.
-						Whether you have questions, ideas, or just want to chat, please feel free to reach out using the form below.
-						I look forward to connecting with you!</p>
+				<header class="major section-header-main">
+					<div class="section-title-container">
+						<i class="fas fa-envelope section-icon"></i>
+						<h2>Get In Touch</h2>
+					</div>
+					<p>I'm always excited to connect with fellow developers, potential collaborators, or anyone interested in
+						technology and innovation. Let's start a conversation!</p>
 				</header>
-				<form id="contact-form">
-					<!-- Name field (For sender's name) -->
-					<label for="from_name">Your Name: </label>
-					<input type="text" name="from_name" id="from_name" placeholder="Your name" required>
-					<br><br />
 
-					<!-- Email field -->
-					<label for="email">Your Email: </label>
-					<input type="email" name="email" id="email" placeholder="Your email address" required>
-					<br><br />
+				<div class="contact-container">
+					<div class="contact-info">
+						<div class="contact-card">
+							<div class="contact-icon">
+								<i class="fas fa-comments"></i>
+							</div>
+							<h3>Let's Chat</h3>
+							<p>Have a project idea? Want to discuss technology? Just want to say hello? I'd love to hear from you!</p>
+						</div>
 
-					<!-- Message field -->
-					<label for="message">Your Message: </label>
-					<textarea name="message" id="message" placeholder="Type your message here" required
-						style="width: 100%; height: 200px; font-size: 16px; padding: 10px;"></textarea>
-					<br><br />
+						<div class="contact-card">
+							<div class="contact-icon">
+								<i class="fas fa-lightbulb"></i>
+							</div>
+							<h3>Collaboration</h3>
+							<p>Interested in working together on something exciting? I'm always open to new opportunities and
+								partnerships.</p>
+						</div>
 
-					<!-- Submit button -->
-					<button type="submit">Send Message</button>
-				</form>
+						<div class="contact-card">
+							<div class="contact-icon">
+								<i class="fas fa-question-circle"></i>
+							</div>
+							<h3>Questions?</h3>
+							<p>Curious about my work, experience, or just want to learn more? Don't hesitate to ask!</p>
+						</div>
+					</div>
+
+					<div class="contact-form-container">
+						<h3><i class="fas fa-paper-plane"></i> Send Me a Message</h3>
+						<form id="contact-form" class="modern-contact-form">
+							<div class="form-group">
+								<label for="from_name">
+									<i class="fas fa-user"></i>
+									<span>Your Name</span>
+								</label>
+								<input type="text" name="from_name" id="from_name" placeholder="Enter your name" required>
+							</div>
+
+							<div class="form-group">
+								<label for="email">
+									<i class="fas fa-envelope"></i>
+									<span>Your Email</span>
+								</label>
+								<input type="email" name="email" id="email" placeholder="Enter your email address" required>
+							</div>
+
+							<div class="form-group">
+								<label for="message">
+									<i class="fas fa-comment"></i>
+									<span>Your Message</span>
+								</label>
+								<textarea name="message" id="message" placeholder="Tell me what's on your mind..." required></textarea>
+							</div>
+
+							<button type="submit" class="submit-button">
+								<i class="fas fa-paper-plane"></i>
+								<span>Send Message</span>
+							</button>
+						</form>
+					</div>
+				</div>
 			</section>
 		</div>
 
@@ -529,8 +1986,61 @@
 			}
 
 			typeText();
+
+			// Enhanced Navigation Features
+			const navLinks = document.querySelectorAll('#nav a');
+
+			// Add click effects
+			navLinks.forEach(link => {
+				link.addEventListener('click', function (e) {
+					// Remove active class from all links
+					navLinks.forEach(l => l.classList.remove('active'));
+					// Add active class to clicked link
+					this.classList.add('active');
+
+					// Add ripple effect
+					const ripple = document.createElement('span');
+					ripple.style.position = 'absolute';
+					ripple.style.borderRadius = '50%';
+					ripple.style.background = 'rgba(46, 125, 50, 0.3)';
+					ripple.style.transform = 'scale(0)';
+					ripple.style.animation = 'ripple 0.6s linear';
+					ripple.style.left = '50%';
+					ripple.style.top = '50%';
+					ripple.style.width = '100px';
+					ripple.style.height = '100px';
+					ripple.style.marginLeft = '-50px';
+					ripple.style.marginTop = '-50px';
+
+					this.appendChild(ripple);
+
+					setTimeout(() => {
+						ripple.remove();
+					}, 600);
+				});
+			});
+
+			// Update active state based on scroll position
+			window.addEventListener('scroll', function () {
+				const sections = document.querySelectorAll('section[id]');
+				const scrollPos = window.scrollY + 100;
+
+				sections.forEach(section => {
+					const sectionTop = section.offsetTop;
+					const sectionHeight = section.offsetHeight;
+					const sectionId = section.getAttribute('id');
+					const navLink = document.querySelector(`#nav a[href="#${sectionId}"]`);
+
+					if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+						navLinks.forEach(l => l.classList.remove('active'));
+						if (navLink) navLink.classList.add('active');
+					}
+				});
+			});
 		});
 	</script>
+
+
 	<!-- Include EmailJS SDK -->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 	<script type="text/javascript">

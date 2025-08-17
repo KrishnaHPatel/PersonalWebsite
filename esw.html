@@ -6,6 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
@@ -17,48 +18,512 @@
   <div id="wrapper">
 
     <!-- Header -->
-    <header id="header">
-      <h1>Software Developer - Engineers For A Sustainable World</h1>
-      <img src="images/ESWLogo.jpg" alt="Engineers For A Sustainable World Logo" style="width:100px;height:auto;">
+    <header id="header" class="alt">
+      <div class="experience-banner">
+        <h1><i class="fas fa-leaf"></i> Engineers For A Sustainable World</h1>
+        <p>Software Developer - August 2023 - Present</p>
+      </div>
     </header>
 
     <!-- Main -->
     <div id="main">
 
-      <!-- Content -->
-      <section id="content" class="main">
-        <ul>
-          <li>Collaborate with a team of 5 full-stack developers to create a web platform using Django and React</li>
-          <li>Facilitate the posting and retrieval of excess food for 1,000+ student organizations to reduce food waste.
-          </li>
-          <li>Contribute as a key member of the software developer subteam, enhancing platform functionality and user
-            experience.</li>
-        </ul>
-        <footer class="major">
-          <ul class="actions special">
-            <li><a href="index.html#esw" class="button">Back</a></li>
-          </ul>
-        </footer>
+      <!-- Project Overview -->
+      <section class="main special">
+        <header class="major">
+          <h2><i class="fas fa-star"></i> Project Overview</h2>
+          <p>Leading a team to build a sustainable food waste reduction platform</p>
+        </header>
+
+        <div class="project-overview">
+          <div class="overview-image">
+            <img src="images/ESWProjectPoster.jpg" alt="ESW Project Poster" class="integrated-image" />
+          </div>
+          <div class="overview-text">
+            <p>
+              I lead a team of 5 full-stack developers to build a web platform aimed at serving 500+ student
+              organizations,
+              developing features using the MERN tech stack to enable posting and retrieval of excess food, aimed at
+              reducing food waste.
+            </p>
+            <p>
+              Our web application will allow users to view posts, create new posts, and search through existing posts.
+              It will be restricted to Cornell students via Google Auth and deployed on Netlify/Render.
+            </p>
+          </div>
+        </div>
       </section>
 
+      <!-- Key Features -->
+      <section class="main special">
+        <header class="major">
+          <h2><i class="fas fa-cogs"></i> Key Features</h2>
+          <p>Core functionality of the food waste reduction platform</p>
+        </header>
+
+        <div class="features-container">
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-eye feature-icon"></i>
+              <h3>View Posts</h3>
+            </div>
+            <div class="feature-content">
+              <p>Browse through existing food posts to see what's available and when it was posted.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-plus feature-icon"></i>
+              <h3>Create New Posts</h3>
+            </div>
+            <div class="feature-content">
+              <p>Post excess food items with details like quantity, location, and expiration time.</p>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-header">
+              <i class="fas fa-search feature-icon"></i>
+              <h3>Search Functionality</h3>
+            </div>
+            <div class="feature-content">
+              <p>Search through posts by keywords, location, or food type to find what you need.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical Implementation -->
+      <section class="main special">
+        <header class="major">
+          <h2><i class="fas fa-code"></i> Technical Implementation</h2>
+          <p>Technology stack and deployment details</p>
+        </header>
+
+        <div class="tech-container">
+          <div class="tech-info">
+            <h3><i class="fas fa-layer-group"></i> MERN Stack Development</h3>
+            <p>Built using MongoDB, Express.js, React.js, and Node.js for a modern, scalable web application
+              architecture.</p>
+
+            <div class="tech-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-database"></i>
+                <span>MongoDB Database</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-server"></i>
+                <span>Express.js Backend</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <span>React.js Frontend</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-cogs"></i>
+                <span>Node.js Runtime</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="deployment-container">
+          <div class="deployment-info">
+            <h3><i class="fas fa-rocket"></i> Deployment & Security</h3>
+            <p>Platform deployed on Netlify and Render with Google Auth integration for Cornell student access control.
+            </p>
+
+            <div class="deployment-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-globe"></i>
+                <span>Netlify Frontend</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-server"></i>
+                <span>Render Backend</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Google Auth</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-users"></i>
+                <span>Cornell Students Only</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Gallery -->
+      <section class="main special">
+        <header class="major">
+          <h2><i class="fas fa-images"></i> Project Gallery</h2>
+          <p>Visual documentation of our development process and final product</p>
+        </header>
+
+        <div class="gallery-container">
+          <div class="gallery-item">
+            <img src="images/ESWWebsiteImage.png" alt="ESW Website Homepage" class="gallery-image" />
+            <div class="image-caption">
+              <h4>Website Homepage</h4>
+              <p>Main interface of our food waste reduction platform</p>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img src="images/ESWGroupPic.jpg" alt="ESW Team at Project Presentations" class="gallery-image" />
+            <div class="image-caption">
+              <h4>Team at Project Presentations</h4>
+              <p>ESW end of semester project presentations</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="footer-actions">
+        <a href="index.html#experience" class="button">
+          <i class="fas fa-arrow-left"></i>
+          <span>Back to Experiences</span>
+        </a>
+      </div>
+    </footer>
   </div>
 
-  <!-- Footer -->
-  <footer id="footer">
-    <section>
-    </section>
-  </footer>
-
   <!-- Scripts -->
-  <script src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/jquery.scrollex.min.js"></script>
-  <script src="assets/js/jquery.scrolly.min.js"></script>
-  <script src="assets/js/browser.min.js"></script>
-  <script src="assets/js/breakpoints.min.js"></script>
-  <script src="assets/js/util.js"></script>
   <script src="assets/js/main.js"></script>
 
+  <!-- Custom Styles -->
+  <style>
+    /* Experience Banner Styling */
+    .experience-banner {
+      background: linear-gradient(135deg, #2e7d32 0%, #4caf50 100%) !important;
+      color: white !important;
+      text-align: center;
+      padding: 3rem 2rem;
+      border-radius: 0 0 25px 25px;
+      box-shadow: 0 10px 30px rgba(46, 125, 50, 0.3);
+      position: relative;
+      z-index: 1000 !important;
+      margin-top: 0;
+      display: block !important;
+      visibility: visible !important;
+    }
+
+    /* Header positioning fix */
+    #header {
+      position: relative !important;
+      background: transparent !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    #header.alt {
+      background: transparent !important;
+      padding: 0 !important;
+    }
+
+    .experience-banner h1 {
+      margin: 0 0 1rem 0;
+      font-size: 3.5em;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .experience-banner h1 i {
+      font-size: 0.9em;
+    }
+
+    .experience-banner p {
+      margin: 0;
+      font-size: 1.3em;
+      opacity: 0.95;
+    }
+
+    /* Main content positioning */
+    #main {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    /* Project Overview */
+    .project-overview {
+      max-width: 1000px;
+      margin: 0 auto 4rem auto;
+    }
+
+    .overview-image {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .integrated-image {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .overview-text {
+      color: #2c3e50;
+      font-size: 1.2em;
+      line-height: 1.8;
+      margin: 0;
+      text-align: center;
+    }
+
+    .overview-text p {
+      margin-bottom: 1.5rem;
+    }
+
+    .integrated-image:hover {
+      transform: scale(1.05);
+    }
+
+    /* Features Section */
+    .features-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border: 2px solid #e9ecef;
+      border-radius: 20px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .feature-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #2e7d32, #4caf50);
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    .feature-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+      border-color: #2e7d32;
+    }
+
+    .feature-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature-icon {
+      font-size: 2em;
+      color: #2e7d32;
+    }
+
+    .feature-header h3 {
+      color: #2c3e50;
+      font-size: 1.4em;
+      margin: 0;
+      font-weight: 600;
+    }
+
+    .feature-content p {
+      color: #5a6c7d;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    /* Technical Implementation */
+    .tech-container,
+    .deployment-container {
+      max-width: 800px;
+      margin: 0 auto 3rem auto;
+    }
+
+    .tech-info,
+    .deployment-info {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border: 2px solid #e9ecef;
+      border-radius: 20px;
+      padding: 2.5rem;
+      text-align: center;
+    }
+
+    .tech-info h3,
+    .deployment-info h3 {
+      color: #2e7d32;
+      font-size: 1.5em;
+      margin: 0 0 1.5rem 0;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .tech-info p,
+    .deployment-info p {
+      color: #5a6c7d;
+      line-height: 1.7;
+      margin: 0 0 2rem 0;
+      font-size: 1.1em;
+    }
+
+    .tech-highlights,
+    .deployment-highlights {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .highlight-item {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: #2e7d32;
+      font-weight: 600;
+    }
+
+    .highlight-item i {
+      font-size: 1.2em;
+    }
+
+    /* Project Gallery */
+    .gallery-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      gap: 2rem;
+    }
+
+    .gallery-item {
+      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+      border: 2px solid #e9ecef;
+      border-radius: 20px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+      border-color: #2e7d32;
+    }
+
+    .gallery-image {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item:hover .gallery-image {
+      transform: scale(1.05);
+    }
+
+    .image-caption {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .image-caption h4 {
+      color: #2e7d32;
+      font-size: 1.3em;
+      margin: 0 0 0.8rem 0;
+      font-weight: 600;
+    }
+
+    .image-caption p {
+      color: #5a6c7d;
+      line-height: 1.6;
+      margin: 0;
+      font-size: 0.95em;
+    }
+
+    /* Footer Actions */
+    .footer-actions {
+      text-align: center;
+      margin: 2rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .footer-actions .button {
+      margin: 0 auto;
+    }
+
+    .button {
+      background: linear-gradient(135deg, #2e7d32, #4caf50);
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.8rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 25px rgba(46, 125, 50, 0.3);
+    }
+
+    .button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 15px 35px rgba(46, 125, 50, 0.4);
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .experience-banner h1 {
+        font-size: 2.5em;
+      }
+
+
+
+      .features-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+      }
+
+      .tech-highlights,
+      .deployment-highlights {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+
+      .gallery-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+      }
+    }
+  </style>
 </body>
 
 </html>
