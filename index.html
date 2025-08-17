@@ -1085,6 +1085,16 @@
 					transform: translateX(5px);
 				}
 
+				.publication-button {
+					background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%) !important;
+					box-shadow: 0 8px 25px rgba(30, 136, 229, 0.3) !important;
+					margin-left: 1rem;
+				}
+
+				.publication-button:hover {
+					box-shadow: 0 15px 35px rgba(30, 136, 229, 0.4) !important;
+				}
+
 				.project-section {
 					margin-bottom: 2rem;
 					padding: 1.5rem;
@@ -1471,6 +1481,565 @@
 						padding: 1.5rem;
 					}
 				}
+
+				/* Projects & Demos Styling */
+				.projects-demos-container {
+					max-width: 1200px;
+					margin: 0 auto;
+					display: grid;
+					gap: 3rem;
+				}
+
+				.project-demo-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 25px;
+					padding: 2.5rem;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.project-demo-card::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 4px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
+					transition: transform 0.3s ease;
+				}
+
+				.project-demo-card:hover::before {
+					transform: scaleX(1);
+				}
+
+				.project-demo-card:hover {
+					transform: translateY(-8px);
+					box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.project-header {
+					margin-bottom: 2rem;
+					text-align: center;
+				}
+
+				.project-header h3 {
+					color: #2c3e50;
+					font-size: 1.8em;
+					margin: 0 0 1.5rem 0;
+					font-weight: 700;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.8rem;
+				}
+
+				.project-header h3 i {
+					color: #2e7d32;
+					font-size: 0.9em;
+				}
+
+				.tech-stack {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.8rem;
+					justify-content: center;
+				}
+
+				.tech-tag {
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+					color: #2e7d32;
+					padding: 0.6rem 1.2rem;
+					border-radius: 25px;
+					font-size: 0.9em;
+					font-weight: 500;
+					border: 1px solid rgba(46, 125, 50, 0.2);
+					transition: all 0.3s ease;
+				}
+
+				.tech-tag:hover {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+				}
+
+				.project-description {
+					margin-bottom: 2.5rem;
+					text-align: center;
+				}
+
+				.project-description p {
+					color: #5a6c7d;
+					font-size: 1.1em;
+					line-height: 1.7;
+					margin: 0;
+				}
+
+				.project-bullets {
+					list-style: none;
+					padding: 0;
+					margin: 0;
+					text-align: left;
+				}
+
+				.project-bullets li {
+					color: #5a6c7d;
+					font-size: 1.1em;
+					line-height: 1.7;
+					margin-bottom: 1rem;
+					padding-left: 1.5rem;
+					position: relative;
+				}
+
+				.project-bullets li:before {
+					content: '•';
+					color: #2e7d32;
+					font-weight: bold;
+					font-size: 1.5em;
+					position: absolute;
+					left: 0;
+					top: -0.1em;
+				}
+
+				.project-bullets li:last-child {
+					margin-bottom: 0;
+				}
+
+				.demo-video,
+				.presentation-embed {
+					text-align: center;
+				}
+
+				.demo-video h4,
+				.presentation-embed h4 {
+					color: #2c3e50;
+					font-size: 1.3em;
+					margin: 0 0 1.5rem 0;
+					font-weight: 600;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.5rem;
+				}
+
+				.demo-video h4 i,
+				.presentation-embed h4 i {
+					color: #2e7d32;
+				}
+
+				.demo-video video,
+				.presentation-embed iframe {
+					border-radius: 15px;
+					box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+					max-width: 100%;
+					height: auto;
+				}
+
+				.presentation-embed iframe {
+					width: 100%;
+					height: 400px;
+					border: none;
+				}
+
+				/* Responsive design for projects & demos */
+				@media (max-width: 768px) {
+					.project-demo-card {
+						padding: 1.5rem;
+						margin: 0 1rem;
+					}
+
+					.project-header h3 {
+						font-size: 1.5em;
+					}
+
+					.tech-stack {
+						gap: 0.6rem;
+					}
+
+					.tech-tag {
+						padding: 0.5rem 1rem;
+						font-size: 0.85em;
+					}
+
+					.presentation-embed iframe {
+						height: 300px;
+					}
+				}
+
+				/* Hobbies Styling */
+				.hobbies-container {
+					max-width: 1200px;
+					margin: 0 auto;
+					display: grid;
+					gap: 3rem;
+				}
+
+				.hobby-card {
+					background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+					border: 2px solid #e9ecef;
+					border-radius: 25px;
+					padding: 2.5rem;
+					transition: all 0.3s ease;
+					position: relative;
+					overflow: hidden;
+				}
+
+				.hobby-card::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					height: 4px;
+					background: linear-gradient(90deg, #2e7d32, #4caf50);
+					transform: scaleX(0);
+					transition: transform 0.3s ease;
+				}
+
+				.hobby-card:hover::before {
+					transform: scaleX(1);
+				}
+
+				.hobby-card:hover {
+					transform: translateY(-8px);
+					box-shadow: 0 20px 40px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.hobby-header {
+					margin-bottom: 2rem;
+					text-align: center;
+				}
+
+				.hobby-header h3 {
+					color: #2c3e50;
+					font-size: 1.8em;
+					margin: 0 0 1.5rem 0;
+					font-weight: 700;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 0.8rem;
+				}
+
+				.hobby-header h3 i {
+					color: #2e7d32;
+					font-size: 0.9em;
+				}
+
+				.hobby-header p {
+					color: #5a6c7d;
+					font-size: 1.1em;
+					margin: 0;
+				}
+
+				/* Nature Carousel */
+				.nature-carousel {
+					text-align: center;
+				}
+
+				/* Travel Carousel */
+				.travel-carousel {
+					text-align: center;
+				}
+
+				.carousel-container {
+					position: relative;
+					max-width: 600px;
+					margin: 0 auto 2rem auto;
+					overflow: hidden;
+					border-radius: 20px;
+					box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+				}
+
+				.carousel-track {
+					display: flex;
+					transition: transform 0.5s ease;
+				}
+
+				.carousel-image {
+					width: 100%;
+					height: 400px;
+					object-fit: cover;
+					display: none;
+				}
+
+				.carousel-image.active {
+					display: block;
+				}
+
+				/* Travel carousel specific styling */
+				.travel-carousel .carousel-container {
+					max-width: 500px;
+				}
+
+				.travel-carousel .carousel-image {
+					height: 350px;
+				}
+
+				.carousel-controls {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					gap: 2rem;
+					margin-top: 1rem;
+				}
+
+				.carousel-btn {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					border: none;
+					padding: 0.8rem 1.2rem;
+					border-radius: 50%;
+					cursor: pointer;
+					transition: all 0.3s ease;
+					box-shadow: 0 5px 15px rgba(46, 125, 50, 0.3);
+				}
+
+				.carousel-btn:hover {
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.4);
+				}
+
+				.carousel-dots {
+					display: flex;
+					gap: 0.5rem;
+				}
+
+				.dot {
+					width: 12px;
+					height: 12px;
+					border-radius: 50%;
+					background: #e9ecef;
+					cursor: pointer;
+					transition: all 0.3s ease;
+				}
+
+				.dot.active {
+					background: #2e7d32;
+					transform: scale(1.2);
+				}
+
+				/* Photo Grids */
+				.photo-grid {
+					display: grid;
+					grid-template-columns: repeat(4, 1fr);
+					gap: 1rem;
+					margin-top: 1.5rem;
+				}
+
+				/* Food photos grid - more photos, smaller grid */
+				.food-photos .photo-grid {
+					grid-template-columns: repeat(6, 1fr);
+					gap: 0.8rem;
+				}
+
+				.photo-item {
+					position: relative;
+					text-align: center;
+				}
+
+				.adventure-photo,
+				.food-photo {
+					width: 100%;
+					height: 120px;
+					object-fit: cover;
+					border-radius: 15px;
+					box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+					transition: all 0.3s ease;
+				}
+
+				.adventure-photo:hover,
+				.food-photo:hover {
+					transform: scale(1.05) rotate(2deg);
+					box-shadow: 0 12px 30px rgba(46, 125, 50, 0.25);
+				}
+
+				.photo-caption {
+					display: block;
+					margin-top: 0.5rem;
+					color: #2c3e50;
+					font-size: 0.9em;
+					font-weight: 500;
+				}
+
+				/* Travel & Food Sections */
+				.travel-destinations,
+				.food-favorites {
+					margin-bottom: 2rem;
+					text-align: center;
+				}
+
+				.travel-destinations h4,
+				.food-favorites h4 {
+					color: #2c3e50;
+					font-size: 1.3em;
+					margin: 0 0 1rem 0;
+					font-weight: 600;
+				}
+
+				.destination-tags {
+					display: flex;
+					flex-wrap: wrap;
+					gap: 0.8rem;
+					justify-content: center;
+					margin-bottom: 1rem;
+				}
+
+				.destination-tag {
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.1) 0%, rgba(76, 175, 80, 0.1) 100%);
+					color: #2e7d32;
+					padding: 0.6rem 1.2rem;
+					border-radius: 25px;
+					font-size: 0.9em;
+					font-weight: 500;
+					border: 1px solid rgba(46, 125, 50, 0.2);
+					transition: all 0.3s ease;
+				}
+
+				.destination-tag:hover {
+					background: linear-gradient(135deg, #2e7d32, #4caf50);
+					color: white;
+					transform: translateY(-2px);
+					box-shadow: 0 8px 20px rgba(46, 125, 50, 0.3);
+				}
+
+				.travel-note {
+					color: #5a6c7d;
+					font-style: italic;
+					margin: 0;
+				}
+
+				.food-favorites p {
+					color: #5a6c7d;
+					line-height: 1.6;
+					margin: 0;
+				}
+
+				/* Running & Reading Feature Sections */
+				.running-stats,
+				.reading-features {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					gap: 2rem;
+					margin-top: 1rem;
+				}
+
+				.stat-item,
+				.feature-item {
+					text-align: center;
+					padding: 1.5rem;
+					background: linear-gradient(135deg, rgba(46, 125, 50, 0.05) 0%, rgba(76, 175, 80, 0.05) 100%);
+					border-radius: 20px;
+					border: 1px solid rgba(46, 125, 50, 0.1);
+					transition: all 0.3s ease;
+				}
+
+				.stat-item:hover,
+				.feature-item:hover {
+					transform: translateY(-5px);
+					box-shadow: 0 15px 30px rgba(46, 125, 50, 0.15);
+					border-color: #2e7d32;
+				}
+
+				.stat-item i,
+				.feature-item i {
+					font-size: 2.5em;
+					color: #2e7d32;
+					margin-bottom: 1rem;
+				}
+
+				.stat-item h4,
+				.feature-item h4 {
+					color: #2c3e50;
+					font-size: 1.2em;
+					margin: 0 0 0.8rem 0;
+					font-weight: 600;
+				}
+
+				.stat-item p,
+				.feature-item p {
+					color: #5a6c7d;
+					font-size: 0.95em;
+					line-height: 1.5;
+					margin: 0;
+				}
+
+				/* Hobby Description Styling */
+				.hobby-description {
+					color: #5a6c7d;
+					font-size: 1.1em;
+					line-height: 1.6;
+					text-align: center;
+					margin: 0;
+					padding: 1rem 0;
+				}
+
+				/* Responsive Design for Hobbies */
+				@media (max-width: 768px) {
+					.hobby-card {
+						padding: 1.5rem;
+						margin: 0 1rem;
+					}
+
+					.hobby-header h3 {
+						font-size: 1.5em;
+					}
+
+					.photo-grid {
+						grid-template-columns: repeat(2, 1fr);
+						gap: 0.8rem;
+					}
+
+					/* Food photos grid on mobile */
+					.food-photos .photo-grid {
+						grid-template-columns: repeat(3, 1fr);
+						gap: 0.6rem;
+					}
+
+					/* Feature sections on mobile */
+					.running-stats,
+					.reading-features {
+						grid-template-columns: 1fr;
+						gap: 1rem;
+					}
+
+					.stat-item,
+					.feature-item {
+						padding: 1rem;
+					}
+
+					.adventure-photo,
+					.food-photo {
+						height: 100px;
+					}
+
+					.carousel-container {
+						max-width: 100%;
+					}
+
+					.carousel-image {
+						height: 300px;
+					}
+
+					.carousel-controls {
+						gap: 1rem;
+					}
+
+					.destination-tags {
+						gap: 0.6rem;
+					}
+
+					.destination-tag {
+						padding: 0.5rem 1rem;
+						font-size: 0.85em;
+					}
+				}
 			</style>
 
 			<!-- Experiences -->
@@ -1514,37 +2083,6 @@
 						</div>
 					</div>
 
-					<!-- AI Intern Experience -->
-					<div class="experience-card">
-						<div class="experience-header">
-							<div class="company-image-container">
-								<img src="images/NavigatingAwetism.jpg" alt="Navigating AWEtism"
-									class="company-image rectangular-image" />
-							</div>
-							<div class="company-details">
-								<h3>Navigating AWEtism</h3>
-								<p class="role">AI Intern</p>
-								<p class="duration">Summer 2024</p>
-							</div>
-						</div>
-
-						<div class="experience-content">
-							<p class="experience-description">
-								Developed AI-powered solutions for autism support, including chatbot training datasets and machine
-								learning models to improve accessibility and user experience for individuals with autism.
-							</p>
-
-							<div class="experience-actions">
-								<a href="aiintern.html" class="experience-button">
-									<span>Learn More</span>
-									<i class="fas fa-arrow-right"></i>
-								</a>
-							</div>
-						</div>
-					</div>
-
-
-
 					<!-- ESW Experience -->
 					<div class="experience-card">
 						<div class="experience-header">
@@ -1560,8 +2098,8 @@
 
 						<div class="experience-content">
 							<p class="experience-description">
-								Developing software solutions focused on sustainability, working on interdisciplinary teams to drive
-								impactful environmental projects and promote sustainable engineering practices.
+								I lead a team of 5 full-stack developers to build a web platform, aimed at serving 500+ student
+								organizations, that would enable posting and retrieval of excess food to reduce food waste.
 							</p>
 
 							<div class="experience-actions">
@@ -1572,6 +2110,39 @@
 							</div>
 						</div>
 					</div>
+
+					<!-- AI Intern Experience -->
+					<div class="experience-card">
+						<div class="experience-header">
+							<div class="company-image-container">
+								<img src="images/NavigatingAwetism.jpg" alt="Navigating AWEtism"
+									class="company-image rectangular-image" />
+							</div>
+							<div class="company-details">
+								<h3>Navigating AWEtism</h3>
+								<p class="role">AI & Data Intern</p>
+								<p class="duration">Summer 2024</p>
+							</div>
+						</div>
+
+						<div class="experience-content">
+							<p class="experience-description">
+								I developed AI chatbots, built comprehensive datasets through web scraping, and created multilingual
+								content through advanced audio processing and AI-powered language generation.
+							</p>
+
+							<div class="experience-actions">
+								<a href="aiintern.html" class="experience-button">
+									<span>Learn More</span>
+									<i class="fas fa-arrow-right"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+
+
+
 
 
 
@@ -1595,9 +2166,14 @@
 							</p>
 
 							<div class="experience-actions">
-								<a href="weillcornell.html" class="experience-button">
+								<a href="research.html" class="experience-button">
 									<span>Learn More</span>
 									<i class="fas fa-arrow-right"></i>
+								</a>
+								<a href="https://www.frontiersin.org/journals/space-technologies/articles/10.3389/frspt.2024.1391200/full"
+									class="experience-button publication-button" target="_blank">
+									<span>Publication Link</span>
+									<i class="fas fa-external-link-alt"></i>
 								</a>
 							</div>
 						</div>
@@ -1607,108 +2183,98 @@
 				</div>
 			</section>
 
-			<!-- Projects -->
+			<!-- Projects & Demos -->
 			<section id="projects" class="main special">
 				<header class="major section-header-main">
 					<div class="section-title-container">
 						<i class="fas fa-rocket section-icon"></i>
-						<h2>Projects</h2>
+						<h2>Projects & Demos</h2>
 					</div>
-					<p>Below is a brief overview of some of my key projects.</p>
+					<p>Here are some cool projects I have worked on in my free time, along with demos showcasing them in action.
+					</p>
 				</header>
 
-				<!-- <div class="projects-grid">
-					<div class="project-item">
-						<h3>Personal Journal Application</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="journal.html" class="button">Project Details</a>
+				<div class="projects-demos-container">
+					<!-- Personal Journal Application -->
+					<div class="project-demo-card">
+						<div class="project-header">
+							<h3><i class="fas fa-book"></i> Personal Journal Application</h3>
+							<div class="tech-stack">
+								<span class="tech-tag">Next.js</span>
+								<span class="tech-tag">Material UI</span>
+								<span class="tech-tag">Firebase</span>
+								<span class="tech-tag">JavaScript</span>
+							</div>
+						</div>
+						<div class="project-description">
+							<p>Developed a journal application with a sleek, modern interface using Next.js and Material UI. This app
+								allows users to write, store, and manage journal entries seamlessly. Integrated Firebase ensures secure
+								user authentication and real-time data synchronization.</p>
+						</div>
+						<div class="demo-video">
+							<h4><i class="fas fa-play-circle"></i> Demo Video</h4>
+							<video controls width="100%" poster="images/PersonalAppImage.png">
+								<source src="videos/personaljournaldemo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
 					</div>
 
-					<div class="project-item">
-						<h3>Heart Disease Predictor</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="predictor.html" class="button">Project Details</a>
+					<!-- NASA MCA Project -->
+					<div class="project-demo-card">
+						<div class="project-header">
+							<h3><i class="fas fa-rocket"></i> NASA L'SPACE Mission Concept Academy</h3>
+							<div class="tech-stack">
+								<span class="tech-tag">Systems Engineering</span>
+								<span class="tech-tag">Mission Design</span>
+								<span class="tech-tag">Team Leadership</span>
+								<span class="tech-tag">Technical Writing</span>
+							</div>
+						</div>
+						<div class="project-description">
+							<ul class="project-bullets">
+								<li>Led an engineering team of 5 in designing the software and hardware systems for a lunar rover to
+									study water-ice on the Moon</li>
+								<li>Authored 5 comprehensive mission proposals, over 100 pages each, detailing technical components,
+									engineering plans, and more</li>
+								<li>Collaborated with thermal, mechanical, electrical, and CDH teams to support system integration and
+									optimization</li>
+							</ul>
+						</div>
+						<div class="presentation-embed">
+							<h4><i class="fas fa-presentation"></i> Final Presentation</h4>
+							<iframe
+								src="https://docs.google.com/presentation/d/e/2PACX-1vRb2gH-WTsJvki02qcdCIJv8YDyZ-1CkJvFGslUB40xbxAY4OXaHqPFr31mEKAta0ZLa23s0S6RZEXj/embed?start=false&loop=false&delayms=5000"
+								frameborder="0" width="100%" height="400" allowfullscreen="true" mozallowfullscreen="true"
+								webkitallowfullscreen="true">
+							</iframe>
+						</div>
 					</div>
 
-					<div class="project-item">
-						<h3>Boggle Game Suite</h3>
-						<p><strong>Source:</strong> CS 3110 - Final Project</p>
-						<a href="boggle.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>Vinyl Collection Tracker</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="vinylTracker.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>Shortest Path Maze Challenge</h3>
-						<p><strong>Source:</strong> CS 2110 - Final Project</p>
-						<a href="maze.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>WebScraper</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="webscraper.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>N-Gram Generator</h3>
-						<p><strong>Source:</strong> CS 3110 - Class Project</p>
-						<a href="ngram.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>Carbon Emissions Calculator</h3>
-						<p><strong>Source:</strong> Big Red Hackathon </p>
-						<a href="emissionsCalculator.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>Tic-Tac-Toe</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="tictactoe.html" class="button">Project Details</a>
-					</div>
-
-					<div class="project-item">
-						<h3>Personal Website</h3>
-						<p><strong>Source:</strong> GitHub</p>
-						<a href="website.html" class="button">Project Details</a>
-					</div>
-				</div> -->
-			</section>
-
-			<!-- Demos -->
-			<section id="demos" class="main special">
-				<header class="major section-header-main">
-					<div class="section-title-container">
-						<i class="fas fa-play-circle section-icon"></i>
-						<h2>Demos</h2>
-					</div>
-					<p>Here are video demos showcasing some of my projects in action.</p>
-				</header>
-
-				<div class="demos-grid">
-					<!-- Demo 1 -->
-					<div class="demo-item">
-						<h3>Personal Journal Application</h3>
-						<p>Watch how the Personal Journal Application works in action.</p>
-						<video controls width="100%" poster="images/PersonalAppImage.png">
-							<source src="videos/personaljournaldemo.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
-					</div>
-
-					<!-- Demo 2 -->
-					<div class="demo-item">
-						<h3>Leftover Food Solutions -- ESW</h3>
-						<p>Watch how our Sustainability app for Cornell's campus helps reduce food waste.</p>
-						<video controls width="100%" poster="images/ESWWebsiteImage.png">
-							<source src="videos/leftoverfooddemo.mp4" type="video/mp4">
-							Your browser does not support the video tag.
-						</video>
+					<!-- ESW Leftover Food Solutions -->
+					<div class="project-demo-card">
+						<div class="project-header">
+							<h3><i class="fas fa-leaf"></i> ESW Leftover Food Solutions</h3>
+							<div class="tech-stack">
+								<span class="tech-tag">MERN Stack</span>
+								<span class="tech-tag">React</span>
+								<span class="tech-tag">Node.js</span>
+								<span class="tech-tag">MongoDB</span>
+							</div>
+						</div>
+						<div class="project-description">
+							<p>Our sustainability app prototype for Cornell's campus helps reduce food waste by enabling students to
+								post and
+								find leftover food. Built with the MERN stack, it features user authentication, real-time updates, and a
+								responsive design.</p>
+						</div>
+						<div class="demo-video">
+							<h4><i class="fas fa-play-circle"></i> Demo Video</h4>
+							<video controls width="100%" poster="images/ESWWebsiteImage.png">
+								<source src="videos/leftoverfooddemo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -1817,64 +2383,173 @@
 						of the activities I enjoy in my free time.</p>
 				</header>
 
-				<!-- <div class="hobbies-grid">
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Running</h3>
-							<p>I love staying fit and exploring new routes by running regularly.</p>
+				<div class="hobbies-container">
+					<!-- Nature & Outdoors -->
+					<div class="hobby-card">
+						<div class="hobby-header">
+							<h3><i class="fas fa-mountain"></i> Nature & Photography</h3>
+							<p>Hiking, photography, and exploring the great outdoors</p>
 						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/Running5K.jpg" alt="Running" class="hobby-image" />
+						<div class="nature-carousel">
+							<div class="carousel-container">
+								<div class="carousel-track">
+									<img src="images/nature/nature1.jpg" alt="Nature Photo 1" class="carousel-image active" />
+									<img src="images/nature/nature2.jpeg" alt="Nature Photo 2" class="carousel-image" />
+									<img src="images/nature/nature3.jpeg" alt="Nature Photo 3" class="carousel-image" />
+									<img src="images/nature/nature5.jpeg" alt="Nature Photo 5" class="carousel-image" />
+									<img src="images/nature/nature7.jpg" alt="Nature Photo 7" class="carousel-image" />
+									<img src="images/nature/nature8.jpg" alt="Nature Photo 8" class="carousel-image" />
+									<img src="images/nature/nature9.jpg" alt="Nature Photo 9" class="carousel-image" />
+									<img src="images/nature/nature10.jpg" alt="Nature Photo 10" class="carousel-image" />
+									<img src="images/nature/nature12.jpg" alt="Nature Photo 12" class="carousel-image" />
+									<img src="images/nature/nature13.jpg" alt="Nature Photo 13" class="carousel-image" />
+									<img src="images/nature/nature14.jpg" alt="Nature Photo 14" class="carousel-image" />
+									<img src="images/nature/nature16.jpg" alt="Nature Photo 16" class="carousel-image" />
+									<img src="images/nature/nature17.jpg" alt="Nature Photo 17" class="carousel-image" />
+									<img src="images/nature/nature18.jpg" alt="Nature Photo 18" class="carousel-image" />
+									<img src="images/nature/nature19.jpg" alt="Nature Photo 19" class="carousel-image" />
+									<img src="images/nature/nature20.jpg" alt="Nature Photo 20" class="carousel-image" />
+									<img src="images/nature/nature21.jpg" alt="Nature Photo 21" class="carousel-image" />
+								</div>
+							</div>
+							<div class="carousel-controls">
+								<button class="carousel-btn prev-btn" onclick="changeSlide(-1)">
+									<i class="fas fa-chevron-left"></i>
+								</button>
+								<div class="carousel-dots">
+									<span class="dot active" onclick="currentSlide(1)"></span>
+									<span class="dot" onclick="currentSlide(2)"></span>
+									<span class="dot" onclick="currentSlide(3)"></span>
+									<span class="dot" onclick="currentSlide(4)"></span>
+									<span class="dot" onclick="currentSlide(5)"></span>
+									<span class="dot" onclick="currentSlide(6)"></span>
+									<span class="dot" onclick="currentSlide(7)"></span>
+									<span class="dot" onclick="currentSlide(8)"></span>
+									<span class="dot" onclick="currentSlide(9)"></span>
+									<span class="dot" onclick="currentSlide(10)"></span>
+									<span class="dot" onclick="currentSlide(11)"></span>
+									<span class="dot" onclick="currentSlide(12)"></span>
+									<span class="dot" onclick="currentSlide(13)"></span>
+									<span class="dot" onclick="currentSlide(14)"></span>
+									<span class="dot" onclick="currentSlide(15)"></span>
+									<span class="dot" onclick="currentSlide(16)"></span>
+									<span class="dot" onclick="currentSlide(17)"></span>
+									<span class="dot" onclick="currentSlide(18)"></span>
+									<span class="dot" onclick="currentSlide(19)"></span>
+									<span class="dot" onclick="currentSlide(20)"></span>
+									<span class="dot" onclick="currentSlide(21)"></span>
+								</div>
+								<button class="carousel-btn next-btn" onclick="changeSlide(1)">
+									<i class="fas fa-chevron-right"></i>
+								</button>
+							</div>
 						</div>
 					</div>
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Reading</h3>
-							<p>Reading both fiction and non-fiction books helps me relax and learn new things.</p>
+					<!-- Traveling & New Activities -->
+					<div class="hobby-card">
+						<div class="hobby-header">
+							<h3><i class="fas fa-plane"></i> Traveling & New Activities</h3>
+							<p>Exploring new cultures, destinations, and trying exciting adventures</p>
 						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/books.jpeg" alt="Reading" class="hobby-image" />
-						</div>
-					</div>
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Outdoor Adventures</h3>
-							<p>From traveling to hiking to surfing, I love being in nature and experiencing new
-								adventures.</p>
-						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/Hiking.JPG" alt="Outdoor Adventures" class="hobby-image" />
-						</div>
-					</div>
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Tech Trends</h3>
-							<p>I enjoy staying up-to-date with the latest tech innovations and trends, constantly learning about new
-								advancements.</p>
-						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/TechTrends.jpeg" alt="Tech Trends" class="hobby-image" />
+						<div class="hobby-content">
+							<div class="travel-destinations">
+								<h4>Countries I've Visited:</h4>
+								<div class="destination-tags">
+									<span class="destination-tag">🇨🇭 Switzerland</span>
+									<span class="destination-tag">🇮🇹 Italy</span>
+									<span class="destination-tag">🇮🇳 India</span>
+									<span class="destination-tag">🇲🇽 Mexico</span>
+									<span class="destination-tag">🇨🇦 Canada</span>
+								</div>
+								<p class="travel-note">And so much more left to see! 🌍</p>
+							</div>
+
+
+
 						</div>
 					</div>
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Space Exploration</h3>
-							<p>I'm fascinated by space, rockets, and everything related to astronomy and space travel.</p>
+
+					<!-- Trying New Foods -->
+					<div class="hobby-card">
+						<div class="hobby-header">
+							<h3><i class="fas fa-utensils"></i> Trying New Foods</h3>
+							<p>Exploring diverse cuisines and flavors from around the world</p>
 						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/SpaceExplore.jpg" alt="Space Exploration" class="hobby-image" />
+						<div class="hobby-content">
+							<div class="food-favorites">
+								<h4>Favorite Cuisine: Thai! 🇹🇭</h4>
+								<p>I love exploring new restaurants and trying different cuisines. Thai food is my absolute favorite!
+								</p>
+							</div>
+							<div class="food-photos">
+								<div class="photo-grid">
+									<div class="photo-item">
+										<img src="images/food/food1.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food2.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food3.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food4.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food5.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food6.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food7.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food8.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food9.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food10.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food11.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food12.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+									<div class="photo-item">
+										<img src="images/food/food13.jpg" alt="Delicious Food" class="food-photo" />
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="hobby">
-						<div class="hobby-info">
-							<h3>Comedy Sitcoms</h3>
-							<p>I enjoy watching comedy sitcoms for relaxation and entertainment.</p>
+
+					<!-- Running -->
+					<div class="hobby-card">
+						<div class="hobby-header">
+							<h3><i class="fas fa-running"></i> Running</h3>
+							<p>Staying fit and exploring new routes</p>
 						</div>
-						<div class="hobby-image-wrapper">
-							<img src="images/ComedySitcoms.jpg" alt="Comedy Sitcoms" class="hobby-image" />
+						<div class="hobby-content">
+							<p class="hobby-description">Running helps me clear my mind and feel active!</p>
 						</div>
 					</div>
-				</div> -->
+					<!-- Reading -->
+					<div class="hobby-card">
+						<div class="hobby-header">
+							<h3><i class="fas fa-book-open"></i> Reading</h3>
+							<p>Exploring new worlds through literature</p>
+						</div>
+						<div class="hobby-content">
+							<p class="hobby-description">I'm a huge fan of fantasy series like Harry Potter, Percy Jackson, and The
+								Hunger Games, especially dystopian worlds. I also enjoy contemporary literature including The Kite
+								Runner and The Alchemist.</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
 
@@ -1971,6 +2646,54 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
+	<!-- Carousel JavaScript -->
+	<script>
+		// Nature Carousel
+		let currentSlideIndex = 0;
+		const natureImages = document.querySelectorAll('.nature-carousel .carousel-image');
+		const natureDots = document.querySelectorAll('.nature-carousel .dot');
+		const totalNatureSlides = natureImages.length;
+
+		function showNatureSlide(index) {
+			// Hide all nature images
+			natureImages.forEach(img => img.classList.remove('active'));
+			natureDots.forEach(dot => dot.classList.remove('active'));
+
+			// Show current image and dot
+			if (natureImages[index]) {
+				natureImages[index].classList.add('active');
+			}
+			if (natureDots[index]) {
+				natureDots[index].classList.add('active');
+			}
+		}
+
+		function changeSlide(direction) {
+			currentSlideIndex += direction;
+
+			// Loop around
+			if (currentSlideIndex >= totalNatureSlides) {
+				currentSlideIndex = 0;
+			}
+			if (currentSlideIndex < 0) {
+				currentSlideIndex = totalNatureSlides - 1;
+			}
+
+			showNatureSlide(currentSlideIndex);
+		}
+
+		function currentSlide(index) {
+			currentSlideIndex = index - 1;
+			showNatureSlide(currentSlideIndex);
+		}
+
+		// Auto-advance nature carousel every 5 seconds
+		setInterval(() => {
+			changeSlide(1);
+		}, 5000);
+	</script>
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			const text = "Hi, I'm Krishna Patel.";
